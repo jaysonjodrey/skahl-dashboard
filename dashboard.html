@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<title>SKAHL Stats Dashboard</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #0a1218;
+  --bg-elevated: #111c25;
+  --surface: #15212d;
+  --surface-2: #1a2937;
+  --border: #1f2e3d;
+  --border-strong: #2a3f54;
+  --ice: #4fc3f7;
+  --ice-dim: rgba(79, 195, 247, 0.15);
+  --ice-glow: rgba(79, 195, 247, 0.4);
+  --red: #f87171;
+  --red-dim: rgba(248, 113, 113, 0.15);
+  --gold: #fbbf24;
+  --green: #34d399;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--text); }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #0d1924 0%, var(--bg) 70%);
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+input, select { font: inherit; color: inherit; }
+table { border-collapse: collapse; width: 100%; }
+
+/* ---------- Layout ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(79, 195, 247, 0.04) 0%, transparent 100%);
+}
+.brand { display: flex; align-items: baseline; gap: 12px; }
+.brand .logo {
+  font-size: 28px;
+  filter: drop-shadow(0 0 8px var(--ice-glow));
+}
+.brand h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.brand .subtitle {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-left: 4px;
+}
+.season-tabs { display: flex; gap: 4px; padding: 4px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
+.season-tabs button {
+  padding: 7px 14px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.15s;
+}
+.season-tabs button:hover { color: var(--text); }
+.season-tabs button.active {
+  background: var(--ice);
+  color: #062536;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 24px 32px 80px;
+  display: grid;
+  gap: 20px;
+}
+
+/* ---------- KPI tiles ---------- */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.kpi::before {
+  content: "";
+  position: absolute; top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: var(--ice);
+  opacity: 0.5;
+}
+.kpi.kpi-accent::before { background: var(--red); }
+.kpi.kpi-gold::before { background: var(--gold); }
+.kpi-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+.kpi-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 4px;
+  letter-spacing: -0.02em;
+}
+.kpi-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+/* ---------- Filter bar ---------- */
+.filter-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.filter-bar > .group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-bar .label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+.search-input {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  width: 220px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-input:focus { border-color: var(--ice); }
+.chip {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.12s;
+}
+.chip:hover { color: var(--text); border-color: var(--border-strong); }
+.chip.active {
+  background: var(--ice-dim);
+  border-color: var(--ice);
+  color: var(--ice);
+}
+.range-control { display: flex; align-items: center; gap: 8px; }
+.range-control input[type="range"] {
+  width: 120px;
+  accent-color: var(--ice);
+}
+.range-display {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ice);
+  min-width: 24px;
+  text-align: right;
+}
+.btn-reset {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.12s;
+}
+.btn-reset:hover { color: var(--red); border-color: var(--red); }
+
+/* ---------- Cards / charts ---------- */
+.card, .chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.card h2, .chart-card h2 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card h2 .muted, .chart-card h2 .muted {
+  color: var(--text-dim);
+  font-weight: 400;
+  font-size: 13px;
+}
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+}
+.charts-grid.equal { grid-template-columns: 1fr 1fr; }
+.chart-wrap { position: relative; height: 320px; }
+
+/* ---------- Stat tabs (leaderboard) ---------- */
+.stat-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.stat-tabs button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 5px 11px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.12s;
+}
+.stat-tabs button:hover { color: var(--text); }
+.stat-tabs button.active {
+  background: var(--ice-dim);
+  border-color: var(--ice);
+  color: var(--ice);
+}
+
+/* ---------- Leaderboard list ---------- */
+.leaderboard {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.leaderboard li {
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.leaderboard li:hover { background: var(--bg-elevated); }
+.leaderboard .rank {
+  color: var(--text-dim);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+.leaderboard li:nth-child(1) .rank { color: var(--gold); }
+.leaderboard li:nth-child(2) .rank { color: #cbd5e1; }
+.leaderboard li:nth-child(3) .rank { color: #c2825a; }
+.leaderboard .player-info { display: flex; flex-direction: column; min-width: 0; }
+.leaderboard .name {
+  font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.leaderboard .meta {
+  font-size: 11px;
+  color: var(--text-dim);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.leaderboard .value {
+  font-weight: 700;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Player table ---------- */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+table thead {
+  background: var(--surface-2);
+  position: sticky;
+  top: 0;
+}
+table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+table th[data-sort] { cursor: pointer; user-select: none; }
+table th[data-sort]:hover { color: var(--ice); }
+table th[data-sort]::after {
+  content: " ↕";
+  opacity: 0.3;
+  font-size: 10px;
+}
+table th.sort-asc::after { content: " ↑"; opacity: 1; color: var(--ice); }
+table th.sort-desc::after { content: " ↓"; opacity: 1; color: var(--ice); }
+table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  white-space: nowrap;
+}
+table tbody tr:hover { background: var(--surface-2); }
+table tbody tr:last-child td { border-bottom: none; }
+table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table td.rank { color: var(--text-dim); font-weight: 600; }
+table td.name { font-weight: 600; }
+table td.team { color: var(--text-muted); }
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-dim);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+footer .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--ice-dim);
+  color: var(--ice);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 11px;
+  margin: 0 4px;
+}
+
+@media (max-width: 900px) {
+  main { padding: 16px; }
+  header { padding: 14px 16px; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .charts-grid.equal { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="logo">⛸</span>
+    <h1>SKAHL Stats</h1>
+    <span class="subtitle">Sno-King Amateur Hockey League · Player Performance</span>
+  </div>
+  <nav class="season-tabs" id="season-tabs">
+    <button data-season="current" class="active">Winter 2025-26</button>
+    <button data-season="historical">2024 Summer Playoffs</button>
+  </nav>
+</header>
+
+<main>
+  <!-- KPIs -->
+  <section class="kpi-grid">
+    <div class="kpi">
+      <div class="kpi-label">Players</div>
+      <div class="kpi-value" data-kpi="players">—</div>
+      <div class="kpi-sub" data-kpi="players-sub">in selected season</div>
+    </div>
+    <div class="kpi kpi-gold">
+      <div class="kpi-label">Top Scorer</div>
+      <div class="kpi-value" data-kpi="top-scorer-name">—</div>
+      <div class="kpi-sub" data-kpi="top-scorer-sub">—</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Total Goals</div>
+      <div class="kpi-value" data-kpi="total-goals">—</div>
+      <div class="kpi-sub" data-kpi="total-goals-sub">across all rosters</div>
+    </div>
+    <div class="kpi kpi-accent">
+      <div class="kpi-label">Highest PPG</div>
+      <div class="kpi-value" data-kpi="best-ppg">—</div>
+      <div class="kpi-sub" data-kpi="best-ppg-sub">—</div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filter-bar">
+    <div class="group">
+      <input type="search" id="search" class="search-input" placeholder="Search players or teams…" autocomplete="off">
+    </div>
+    <div class="group">
+      <span class="label">Division</span>
+      <div id="division-filter" style="display:flex; gap:6px; flex-wrap:wrap;"></div>
+    </div>
+    <div class="group">
+      <span class="label">Min GP</span>
+      <div class="range-control">
+        <input type="range" id="min-gp" min="0" max="30" step="1" value="0">
+        <span class="range-display" id="min-gp-display">0</span>
+      </div>
+    </div>
+    <button class="btn-reset" id="reset-filters">Reset</button>
+  </section>
+
+  <!-- Headline charts: scatter + leaderboard -->
+  <section class="charts-grid">
+    <div class="chart-card">
+      <h2>Scoring Profile <span class="muted">— goals/game vs assists/game · bubble = total points</span></h2>
+      <div class="chart-wrap"><canvas id="scatter"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h2>Top 10 Leaderboard</h2>
+      <nav class="stat-tabs" id="stat-tabs">
+        <button data-stat="points" class="active">Points</button>
+        <button data-stat="goals">Goals</button>
+        <button data-stat="assists">Assists</button>
+        <button data-stat="points_per_game">PPG</button>
+        <button data-stat="games_played">GP</button>
+        <button data-stat="pim">PIM</button>
+      </nav>
+      <ol class="leaderboard" id="leaderboard"></ol>
+    </div>
+  </section>
+
+  <!-- Secondary charts: division avg + team totals -->
+  <section class="charts-grid equal">
+    <div class="chart-card">
+      <h2>Average PPG by Division <span class="muted">— competitiveness check</span></h2>
+      <div class="chart-wrap"><canvas id="div-ppg"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h2>Top Teams by Total Points <span class="muted">— sum across roster</span></h2>
+      <div class="chart-wrap"><canvas id="team-totals"></canvas></div>
+    </div>
+  </section>
+
+  <!-- Full player table -->
+  <section class="card">
+    <h2>All Players <span class="muted" id="row-count"></span></h2>
+    <div class="table-wrap">
+      <table id="player-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th data-sort="name">Player</th>
+            <th>Team</th>
+            <th>Division</th>
+            <th data-sort="games_played" class="num">GP</th>
+            <th data-sort="goals" class="num">G</th>
+            <th data-sort="assists" class="num">A</th>
+            <th data-sort="points" class="num sort-desc">P</th>
+            <th data-sort="pim" class="num">PIM</th>
+            <th data-sort="goals_per_game" class="num">GPG</th>
+            <th data-sort="assists_per_game" class="num">APG</th>
+            <th data-sort="points_per_game" class="num">PPG</th>
+          </tr>
+        </thead>
+        <tbody id="player-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Built with sample data from HAR fixtures · <span class="badge" id="src-badge">—</span> Replace with full scraper output (<code>scraper/skahl_scraper.py</code>) for live league stats
+</footer>
+
+<script>
+// ============================================================================
+// SKAHL Dashboard — runtime
+// Inline data: 50 current + 65 historical PlayerSeasonRecords
+// ============================================================================
+const DATA = {"current":[{"player_id":"LJdbhmchVVDf0kzo","name":"Phin Mallon","team":"Ale Storm","season":"Winter 2025-26","league":"SKAHL","games_played":24,"goals":28,"assists":37,"points":65,"pim":4,"goals_per_game":1.167,"assists_per_game":1.542,"points_per_game":2.71,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"1HJ5cSiEVNSjXUWC"},{"player_id":"a5MFOLGfLkQcSTDI","name":"Tommy Hvidhyld","team":"Mustangs","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":30,"assists":30,"points":60,"pim":2,"goals_per_game":1.364,"assists_per_game":1.364,"points_per_game":2.73,"source":"snokingahl_sportninja","division":"B","team_id":"SHNvMhazWfMTWN7G"},{"player_id":"5eO07GNctvYRfFhV","name":"Alex Carter","team":"Seattle Hockey Co.","season":"Winter 2025-26","league":"SKAHL","games_played":21,"goals":32,"assists":27,"points":59,"pim":0,"goals_per_game":1.524,"assists_per_game":1.286,"points_per_game":2.81,"source":"snokingahl_sportninja","division":"B","team_id":"uCAc7fLSjQvXRmB4"},{"player_id":"KC7JQJbhxd0jS84b","name":"Connor Falkner","team":"Ale Storm","season":"Winter 2025-26","league":"SKAHL","games_played":23,"goals":28,"assists":29,"points":57,"pim":2,"goals_per_game":1.217,"assists_per_game":1.261,"points_per_game":2.48,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"1HJ5cSiEVNSjXUWC"},{"player_id":"E00CM5dHc2KPd0iw","name":"Henry Griffin","team":"BladeRunners","season":"Winter 2025-26","league":"SKAHL","games_played":23,"goals":38,"assists":16,"points":54,"pim":2,"goals_per_game":1.652,"assists_per_game":0.696,"points_per_game":2.35,"source":"snokingahl_sportninja","division":"C3","team_id":"xiQjsjGIsv7Sfcd2"},{"player_id":"z6azywAxR5ladceD","name":"Hironmoy Redman","team":"Sasquatch","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":17,"assists":37,"points":54,"pim":2,"goals_per_game":0.68,"assists_per_game":1.48,"points_per_game":2.16,"source":"snokingahl_sportninja","division":"B","team_id":"o8LmJe75CVKqd3tu"},{"player_id":"AiFSWBYgnPd2jn1D","name":"Brody Leahy-Wollum","team":"T.B.D.","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":35,"assists":18,"points":53,"pim":8,"goals_per_game":1.75,"assists_per_game":0.9,"points_per_game":2.65,"source":"snokingahl_sportninja","division":"C3","team_id":"XaxLQ7hj50bn1uap"},{"player_id":"9sw5gHB1EWHkoZi5","name":"Dan Diroff","team":"Vipers","season":"Winter 2025-26","league":"SKAHL","games_played":21,"goals":21,"assists":28,"points":49,"pim":2,"goals_per_game":1.0,"assists_per_game":1.333,"points_per_game":2.33,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"gIzAuwuFOOuXAIjr"},{"player_id":"UEsDhIG5vaXBPoSW","name":"James Zorchenko","team":"LADA South","season":"Winter 2025-26","league":"SKAHL","games_played":19,"goals":20,"assists":28,"points":48,"pim":16,"goals_per_game":1.053,"assists_per_game":1.474,"points_per_game":2.53,"source":"snokingahl_sportninja","division":"C3","team_id":"nqSWzfUYV0TDFfRg"},{"player_id":"wECruijIWh3jELsK","name":"David Lisitsyn","team":"LADA South","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":29,"assists":18,"points":47,"pim":16,"goals_per_game":1.318,"assists_per_game":0.818,"points_per_game":2.14,"source":"snokingahl_sportninja","division":"C3","team_id":"nqSWzfUYV0TDFfRg"},{"player_id":"Q6HD2nJxy4mxMyyk","name":"Kris Paries","team":"Vipers","season":"Winter 2025-26","league":"SKAHL","games_played":24,"goals":24,"assists":23,"points":47,"pim":20,"goals_per_game":1.0,"assists_per_game":0.958,"points_per_game":1.96,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"gIzAuwuFOOuXAIjr"},{"player_id":"X7rVAxKXUdaJBRhy","name":"Garrett Unsworth","team":"Seattle Hockey Co.","season":"Winter 2025-26","league":"SKAHL","games_played":19,"goals":28,"assists":18,"points":46,"pim":23,"goals_per_game":1.474,"assists_per_game":0.947,"points_per_game":2.42,"source":"snokingahl_sportninja","division":"B","team_id":"uCAc7fLSjQvXRmB4"},{"player_id":"1L8tH7Wrm3r9I5v1","name":"William Lang","team":"Great Vibes HC","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":24,"assists":21,"points":45,"pim":2,"goals_per_game":0.96,"assists_per_game":0.84,"points_per_game":1.8,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"MfgZYdqHZtwUbM8O"},{"player_id":"gM5NRfNJzY7y811L","name":"Nader Motazed","team":"Silverblades","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":21,"assists":21,"points":42,"pim":12,"goals_per_game":1.05,"assists_per_game":1.05,"points_per_game":2.1,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"B0rLZI5HY4uaJeOV"},{"player_id":"kIAJimN2sxaxXMg7","name":"Fraser Oliver","team":"Riders","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":16,"assists":24,"points":40,"pim":8,"goals_per_game":0.64,"assists_per_game":0.96,"points_per_game":1.6,"source":"snokingahl_sportninja","division":"B","team_id":"7EDMvnMbedVIRO9J"},{"player_id":"xv5qwDV9ZbpSBPJg","name":"Kirill Balaban","team":"Weekday Benders","season":"Winter 2025-26","league":"SKAHL","games_played":27,"goals":15,"assists":25,"points":40,"pim":2,"goals_per_game":0.556,"assists_per_game":0.926,"points_per_game":1.48,"source":"snokingahl_sportninja","division":"C3","team_id":"yP7QXQ5PhUYABcL5"},{"player_id":"6VXxWEtz0YhR0oFp","name":"Caleb Scheib","team":"BladeRunners","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":22,"assists":18,"points":40,"pim":8,"goals_per_game":0.88,"assists_per_game":0.72,"points_per_game":1.6,"source":"snokingahl_sportninja","division":"C3","team_id":"xiQjsjGIsv7Sfcd2"},{"player_id":"ktwLOfioMdvTWjJ3","name":"Jacob Dehne","team":"Mustangs","season":"Winter 2025-26","league":"SKAHL","games_played":14,"goals":19,"assists":21,"points":40,"pim":2,"goals_per_game":1.357,"assists_per_game":1.5,"points_per_game":2.86,"source":"snokingahl_sportninja","division":"B","team_id":"SHNvMhazWfMTWN7G"},{"player_id":"mns9ZVSnNa21UuXD","name":"Mark Whitney","team":"Sasquatch","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":18,"assists":21,"points":39,"pim":0,"goals_per_game":0.818,"assists_per_game":0.955,"points_per_game":1.77,"source":"snokingahl_sportninja","division":"B","team_id":"o8LmJe75CVKqd3tu"},{"player_id":"b1cZTL1x5xnsIR8A","name":"Ilya Morozov","team":"Good Vibes HC","season":"Winter 2025-26","league":"SKAHL","games_played":14,"goals":22,"assists":17,"points":39,"pim":4,"goals_per_game":1.571,"assists_per_game":1.214,"points_per_game":2.79,"source":"snokingahl_sportninja","division":"B","team_id":"dYXWOTtApYaO6AXs"},{"player_id":"l8B5BqbT4ShwnOGV","name":"Jonathan Litner","team":"Weekday Benders","season":"Winter 2025-26","league":"SKAHL","games_played":19,"goals":22,"assists":17,"points":39,"pim":0,"goals_per_game":1.158,"assists_per_game":0.895,"points_per_game":2.05,"source":"snokingahl_sportninja","division":"C3","team_id":"yP7QXQ5PhUYABcL5"},{"player_id":"lhjHSuubcIwxaXRh","name":"Keaton Kinerk","team":"Strawmen","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":22,"assists":17,"points":39,"pim":4,"goals_per_game":0.88,"assists_per_game":0.68,"points_per_game":1.56,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"Nj7uV7w2MSDkRETo"},{"player_id":"2KnM5F4XZ1g0hAsa","name":"Brian Raegen","team":"Thunderbeers: Stout","season":"Winter 2025-26","league":"SKAHL","games_played":18,"goals":19,"assists":18,"points":37,"pim":4,"goals_per_game":1.056,"assists_per_game":1.0,"points_per_game":2.06,"source":"snokingahl_sportninja","division":"D2","team_id":"I0swR8DG4nf3o6oX"},{"player_id":"z7TZfNR4yviR0ftW","name":"Jeff Ermak","team":"Misfits","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":21,"assists":16,"points":37,"pim":0,"goals_per_game":0.955,"assists_per_game":0.727,"points_per_game":1.68,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"dulf1e6okIvBv4S9"},{"player_id":"g5Y4BhvhfRPlEldZ","name":"Ryan D'Acquisto","team":"Cluster Pucks","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":24,"assists":12,"points":36,"pim":8,"goals_per_game":1.091,"assists_per_game":0.545,"points_per_game":1.64,"source":"snokingahl_sportninja","division":"DN1","team_id":"9EjKyjVPo0xhKC7h"},{"player_id":"CLRHIM14xM1YNdFT","name":"Ed Wang","team":"Thunderbeers: Stout","season":"Winter 2025-26","league":"SKAHL","games_played":14,"goals":25,"assists":11,"points":36,"pim":2,"goals_per_game":1.786,"assists_per_game":0.786,"points_per_game":2.57,"source":"snokingahl_sportninja","division":"D2","team_id":"I0swR8DG4nf3o6oX"},{"player_id":"tmZrzuzfAisEcSFm","name":"Nicholaus Baker","team":"Iceholes","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":18,"assists":18,"points":36,"pim":2,"goals_per_game":0.818,"assists_per_game":0.818,"points_per_game":1.64,"source":"snokingahl_sportninja","division":"B","team_id":"8Gauqzue2AxmN9tU"},{"player_id":"WEp2slUQ8oIxbDvr","name":"Luke Slevinsky","team":"Teamy McTeamface","season":"Winter 2025-26","league":"SKAHL","games_played":16,"goals":21,"assists":15,"points":36,"pim":2,"goals_per_game":1.312,"assists_per_game":0.938,"points_per_game":2.25,"source":"snokingahl_sportninja","division":"C3","team_id":"8rTOjRalNzWuf3WJ"},{"player_id":"RT7nHHCx5C2E0pFZ","name":"Jeffrey Douglas","team":"Mustangs","season":"Winter 2025-26","league":"SKAHL","games_played":17,"goals":16,"assists":19,"points":35,"pim":2,"goals_per_game":0.941,"assists_per_game":1.118,"points_per_game":2.06,"source":"snokingahl_sportninja","division":"B","team_id":"SHNvMhazWfMTWN7G"},{"player_id":"71JlqEWgXNqiLbSD","name":"Chris Leong","team":"Shaved Ice: Tiger's Blood","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":20,"assists":15,"points":35,"pim":0,"goals_per_game":1.0,"assists_per_game":0.75,"points_per_game":1.75,"source":"snokingahl_sportninja","division":"D5","team_id":"O8htezEVbPqbPzMe"},{"player_id":"OFlV841ppUrtUIYo","name":"Luke Kucera","team":"Vipers","season":"Winter 2025-26","league":"SKAHL","games_played":24,"goals":17,"assists":18,"points":35,"pim":2,"goals_per_game":0.708,"assists_per_game":0.75,"points_per_game":1.46,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"gIzAuwuFOOuXAIjr"},{"player_id":"rrLwr0e7FKNK7Pax","name":"Jonathan Williams","team":"Sasquatch","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":12,"assists":23,"points":35,"pim":6,"goals_per_game":0.6,"assists_per_game":1.15,"points_per_game":1.75,"source":"snokingahl_sportninja","division":"B","team_id":"o8LmJe75CVKqd3tu"},{"player_id":"I8S1IaadzEZrP1Ki","name":"Alex Moshchuk","team":"LADA R","season":"Winter 2025-26","league":"SKAHL","games_played":24,"goals":19,"assists":16,"points":35,"pim":2,"goals_per_game":0.792,"assists_per_game":0.667,"points_per_game":1.46,"source":"snokingahl_sportninja","division":"C4","team_id":"kf4AQ80Zc7xbuUKc"},{"player_id":"OuZqGvzNwBDNEmDk","name":"Ben Antonius","team":"Flounders","season":"Winter 2025-26","league":"SKAHL","games_played":25,"goals":20,"assists":14,"points":34,"pim":16,"goals_per_game":0.8,"assists_per_game":0.56,"points_per_game":1.36,"source":"snokingahl_sportninja","division":"C4","team_id":"HqhKWrxJKrpxTMX3"},{"player_id":"S490dZSbYSvOJP4N","name":"Greg Wilson","team":"Jurassic Puck","season":"Winter 2025-26","league":"SKAHL","games_played":16,"goals":20,"assists":14,"points":34,"pim":2,"goals_per_game":1.25,"assists_per_game":0.875,"points_per_game":2.13,"source":"snokingahl_sportninja","division":"D4","team_id":"J7mKzYZSdPYAdIex"},{"player_id":"TVr3mGaxJ2LbEKns","name":"Grant Loen","team":"Shaved Ice: Tiger's Blood","season":"Winter 2025-26","league":"SKAHL","games_played":17,"goals":19,"assists":15,"points":34,"pim":0,"goals_per_game":1.118,"assists_per_game":0.882,"points_per_game":2.0,"source":"snokingahl_sportninja","division":"D5","team_id":"O8htezEVbPqbPzMe"},{"player_id":"pNhAfJwOV8XdhJF5","name":"Colin Fenelon","team":"Sasquatch","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":11,"assists":22,"points":33,"pim":4,"goals_per_game":0.55,"assists_per_game":1.1,"points_per_game":1.65,"source":"snokingahl_sportninja","division":"B","team_id":"o8LmJe75CVKqd3tu"},{"player_id":"cYCPuS9kFqCtnYqf","name":"Sergey Sablin","team":"Good Vibes HC","season":"Winter 2025-26","league":"SKAHL","games_played":23,"goals":16,"assists":17,"points":33,"pim":0,"goals_per_game":0.696,"assists_per_game":0.739,"points_per_game":1.43,"source":"snokingahl_sportninja","division":"B","team_id":"dYXWOTtApYaO6AXs"},{"player_id":"kR4oAxYNhSDjAD3Q","name":"Mike Malyuk","team":"Weekday Benders","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":13,"assists":20,"points":33,"pim":0,"goals_per_game":0.591,"assists_per_game":0.909,"points_per_game":1.5,"source":"snokingahl_sportninja","division":"C3","team_id":"yP7QXQ5PhUYABcL5"},{"player_id":"3hUjJe3Ca0G8M5hi","name":"Lars Isaksaetre","team":"Roadrunners","season":"Winter 2025-26","league":"SKAHL","games_played":18,"goals":21,"assists":12,"points":33,"pim":0,"goals_per_game":1.167,"assists_per_game":0.667,"points_per_game":1.83,"source":"snokingahl_sportninja","division":"D2","team_id":"bCWc5VMwjjSp6Bhr"},{"player_id":"bXfCwTfwHvURroSS","name":"Zander Hoke","team":"Seattle Hockey Co.","season":"Winter 2025-26","league":"SKAHL","games_played":19,"goals":8,"assists":24,"points":32,"pim":6,"goals_per_game":0.421,"assists_per_game":1.263,"points_per_game":1.68,"source":"snokingahl_sportninja","division":"B","team_id":"uCAc7fLSjQvXRmB4"},{"player_id":"bfa0AFg34f7iERyp","name":"Lance Hebert","team":"BladeRunners","season":"Winter 2025-26","league":"SKAHL","games_played":27,"goals":18,"assists":14,"points":32,"pim":8,"goals_per_game":0.667,"assists_per_game":0.519,"points_per_game":1.19,"source":"snokingahl_sportninja","division":"C3","team_id":"xiQjsjGIsv7Sfcd2"},{"player_id":"g59i6CeZAGjNohZ6","name":"Andrew Fung","team":"SlapSquatch","season":"Winter 2025-26","league":"SKAHL","games_played":18,"goals":24,"assists":8,"points":32,"pim":4,"goals_per_game":1.333,"assists_per_game":0.444,"points_per_game":1.78,"source":"snokingahl_sportninja","division":"DN2","team_id":"5jNW6zgcPs4vjcHg"},{"player_id":"SmpOTlfRNmNH2yD6","name":"Ben Fields","team":"Silverblades","season":"Winter 2025-26","league":"SKAHL","games_played":19,"goals":17,"assists":15,"points":32,"pim":0,"goals_per_game":0.895,"assists_per_game":0.789,"points_per_game":1.68,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"B0rLZI5HY4uaJeOV"},{"player_id":"ezPEeNyUbwSpH3bD","name":"Matt Klupchak","team":"Sasquatch","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":22,"assists":9,"points":31,"pim":0,"goals_per_game":1.1,"assists_per_game":0.45,"points_per_game":1.55,"source":"snokingahl_sportninja","division":"B","team_id":"o8LmJe75CVKqd3tu"},{"player_id":"p1XcYoklRHoVLsh6","name":"Denis Afrakov","team":"Best Vibes HC","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":12,"assists":19,"points":31,"pim":27,"goals_per_game":0.545,"assists_per_game":0.864,"points_per_game":1.41,"source":"snokingahl_sportninja","division":"C3","team_id":"NAO5A3UQHhM0brRK"},{"player_id":"xEHIumWR6hFsg5h0","name":"Kiryl Zakharankau","team":"LADA Doofers","season":"Winter 2025-26","league":"SKAHL","games_played":21,"goals":21,"assists":10,"points":31,"pim":2,"goals_per_game":1.0,"assists_per_game":0.476,"points_per_game":1.48,"source":"snokingahl_sportninja","division":"D4","team_id":"xLz2Oj6jGWWtIvhs"},{"player_id":"giVOHuUB1uoubq8l","name":"Sean Trefethen","team":"Cluster Pucks","season":"Winter 2025-26","league":"SKAHL","games_played":22,"goals":23,"assists":8,"points":31,"pim":2,"goals_per_game":1.045,"assists_per_game":0.364,"points_per_game":1.41,"source":"snokingahl_sportninja","division":"DN1","team_id":"9EjKyjVPo0xhKC7h"},{"player_id":"KeW3dyhBFsVvnBuF","name":"Manuel Vazquez Rivas","team":"Shaved Ice: Tiger's Blood","season":"Winter 2025-26","league":"SKAHL","games_played":20,"goals":13,"assists":18,"points":31,"pim":6,"goals_per_game":0.65,"assists_per_game":0.9,"points_per_game":1.55,"source":"snokingahl_sportninja","division":"D5","team_id":"O8htezEVbPqbPzMe"},{"player_id":"AxcX04KiwudKzCqs","name":"Dane Dahline","team":"Ale Storm","season":"Winter 2025-26","league":"SKAHL","games_played":17,"goals":16,"assists":15,"points":31,"pim":0,"goals_per_game":0.941,"assists_per_game":0.882,"points_per_game":1.82,"source":"snokingahl_sportninja","division":"C-Wednesday","team_id":"1HJ5cSiEVNSjXUWC"}],"historical":[{"player_id":"4093","name":"Hiron Redman","team":"Sasquatch","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":4,"points":6,"pim":2,"goals_per_game":1.0,"assists_per_game":2.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-B1","team_id":"2742"},{"player_id":"4059","name":"Mark Whitney","team":"Sasquatch","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":4,"assists":1,"points":5,"pim":0,"goals_per_game":2.0,"assists_per_game":0.5,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-B1","team_id":"2742"},{"player_id":"4066","name":"Chris Jones","team":"Sasquatch","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":2,"points":5,"pim":2,"goals_per_game":1.5,"assists_per_game":1.0,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-B1","team_id":"2742"},{"player_id":"50941","name":"Jonathan Williams","team":"Sasquatch","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":3,"points":5,"pim":2,"goals_per_game":1.0,"assists_per_game":1.5,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-B1","team_id":"2742"},{"player_id":"18568","name":"Eric Tulowitzki","team":"Riders","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-B1","team_id":"1052"},{"player_id":"42388","name":"Nathan Lutz","team":"Seattle Hockey Co.","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":4,"points":6,"pim":2,"goals_per_game":1.0,"assists_per_game":2.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-B2","team_id":"1200"},{"player_id":"3874","name":"Will Lang","team":"Local Resistance","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":2,"points":5,"pim":0,"goals_per_game":1.5,"assists_per_game":1.0,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-B2","team_id":"1415"},{"player_id":"32902","name":"Dmitri Fisenko","team":"Seattle Hockey Co.","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":3.0,"assists_per_game":1.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-B2","team_id":"1200"},{"player_id":"62350","name":"Cole Dubicki","team":"Seattle Hockey Co.","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":3,"points":4,"pim":0,"goals_per_game":1.0,"assists_per_game":3.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-B2","team_id":"1200"},{"player_id":"61351","name":"Nick Baker","team":"Iceholes","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-B2","team_id":"1051"},{"player_id":"32902","name":"Dmitri Fisenko","team":"LADA C","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":3,"assists":2,"points":5,"pim":0,"goals_per_game":3.0,"assists_per_game":2.0,"points_per_game":5.0,"source":"snokinghockeyleague","division":"Division-C1","team_id":"1058"},{"player_id":"47209","name":"Rick Sutorius","team":"Stick & Morty","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":4,"assists":1,"points":5,"pim":2,"goals_per_game":2.0,"assists_per_game":0.5,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-C1","team_id":"1548"},{"player_id":"274","name":"Christopher Sinner","team":"Misfits","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":3,"points":4,"pim":0,"goals_per_game":0.5,"assists_per_game":1.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-C1","team_id":"1049"},{"player_id":"61059","name":"Chas Scott","team":"No ReGretzkys","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":2.0,"assists_per_game":1.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-C1","team_id":"3243"},{"player_id":"31765","name":"Andrew Sutorius","team":"Stick & Morty","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":2.0,"assists_per_game":1.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-C1","team_id":"1548"},{"player_id":"7672","name":"Daniel Boelens","team":"Strawmen","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":2,"points":4,"pim":0,"goals_per_game":2.0,"assists_per_game":2.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-C2","team_id":"1202"},{"player_id":"61074","name":"Cory Smetana","team":"Teamy McTeamface","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":2,"points":4,"pim":0,"goals_per_game":1.0,"assists_per_game":1.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-C2","team_id":"1203"},{"player_id":"51257","name":"Michael Baumker","team":"Murder Hornets","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":3,"points":4,"pim":0,"goals_per_game":0.5,"assists_per_game":1.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-C2","team_id":"2760"},{"player_id":"21486","name":"Nader Motazed","team":"Silverblades","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":3,"points":4,"pim":0,"goals_per_game":0.5,"assists_per_game":1.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-C2","team_id":"1057"},{"player_id":"55742","name":"Ross O'Brien","team":"Murder Hornets","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-C2","team_id":"2760"},{"player_id":"22034","name":"Jonathan Litner","team":"Weekday Benders","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":4,"assists":1,"points":5,"pim":0,"goals_per_game":2.0,"assists_per_game":0.5,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-C3","team_id":"2266"},{"player_id":"38043","name":"Brent Breslin","team":"Weekday Benders","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":3,"points":4,"pim":2,"goals_per_game":1.0,"assists_per_game":3.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-C3","team_id":"2266"},{"player_id":"11331","name":"Patrick Kabealo","team":"Weekday Benders","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":0,"assists":4,"points":4,"pim":2,"goals_per_game":0.0,"assists_per_game":4.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-C3","team_id":"2266"},{"player_id":"443","name":"Ivan Lisitsyn","team":"LADA South","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-C3","team_id":"1432"},{"player_id":"50910","name":"Andrew Radke","team":"Weekday Benders","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":2,"points":3,"pim":0,"goals_per_game":0.5,"assists_per_game":1.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-C3","team_id":"2266"},{"player_id":"39162","name":"Matt Sutorius","team":"Blue Bandits","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":6,"goals":11,"assists":9,"points":20,"pim":6,"goals_per_game":1.83,"assists_per_game":1.5,"points_per_game":3.33,"source":"snokinghockeyleague","division":"Division-C4","team_id":"3242"},{"player_id":"31765","name":"Andrew Sutorius","team":"Blue Bandits","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":5,"goals":9,"assists":8,"points":17,"pim":0,"goals_per_game":1.8,"assists_per_game":1.6,"points_per_game":3.4,"source":"snokinghockeyleague","division":"Division-C4","team_id":"3242"},{"player_id":"35009","name":"Giovanni Siciliano","team":"Short Shifters","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":6,"goals":10,"assists":5,"points":15,"pim":2,"goals_per_game":1.67,"assists_per_game":0.83,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-C4","team_id":"1549"},{"player_id":"29482","name":"Tyler Lebovic","team":"Blue Bandits","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":6,"goals":8,"assists":5,"points":13,"pim":0,"goals_per_game":1.33,"assists_per_game":0.83,"points_per_game":2.17,"source":"snokinghockeyleague","division":"Division-C4","team_id":"3242"},{"player_id":"37321","name":"Karl Dubeau","team":"Short Shifters","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":5,"goals":11,"assists":1,"points":12,"pim":2,"goals_per_game":2.2,"assists_per_game":0.2,"points_per_game":2.4,"source":"snokinghockeyleague","division":"Division-C4","team_id":"1549"},{"player_id":"45437","name":"Gregory Kaplin","team":"LADA Turbo Kings","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":2,"points":3,"pim":0,"goals_per_game":0.5,"assists_per_game":1.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D1","team_id":"2704"},{"player_id":"42290","name":"Colby Snorsky","team":"Mt. Si Tavern Warriors","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":2,"points":3,"pim":6,"goals_per_game":0.5,"assists_per_game":1.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D1","team_id":"2706"},{"player_id":"28964","name":"Peter Gray","team":"Roadrunners","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":0,"assists":3,"points":3,"pim":0,"goals_per_game":0.0,"assists_per_game":1.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D1","team_id":"2111"},{"player_id":"42264","name":"Mikhail Belov","team":"LADA Turbo Kings","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":1.0,"assists_per_game":0.0,"points_per_game":1.0,"source":"snokinghockeyleague","division":"Division-D1","team_id":"2704"},{"player_id":"24092","name":"Al Attallah","team":"Hosers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":1.0,"assists_per_game":0.0,"points_per_game":1.0,"source":"snokinghockeyleague","division":"Division-D1","team_id":"1073"},{"player_id":"25256","name":"Charles Farina","team":"Cascadiens","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":3,"assists":0,"points":3,"pim":0,"goals_per_game":3.0,"assists_per_game":0.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-D2","team_id":"2201"},{"player_id":"29482","name":"Tyler Lebovic","team":"Tic-Tac-Toes","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D2","team_id":"1399"},{"player_id":"21875","name":"Thomas Schmidt","team":"Fighting Sasquatches D","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":2,"points":3,"pim":2,"goals_per_game":0.5,"assists_per_game":1.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D2","team_id":"1403"},{"player_id":"12465","name":"John Stearns","team":"Tic-Tac-Toes","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":1,"points":2,"pim":0,"goals_per_game":1.0,"assists_per_game":1.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D2","team_id":"1399"},{"player_id":"447","name":"Alexander Volkov","team":"LADA Beerteam","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":1.0,"assists_per_game":0.0,"points_per_game":1.0,"source":"snokinghockeyleague","division":"Division-D2","team_id":"1654"},{"player_id":"28889","name":"Eli Verbowski","team":"Frost Giants","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D3","team_id":"1075"},{"player_id":"61258","name":"BRENNAN NOWAK","team":"Puck Buddies Reserve","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":2,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D3","team_id":"1297"},{"player_id":"29486","name":"Aaron Wightman","team":"Frost Giants","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":0,"points":3,"pim":0,"goals_per_game":1.5,"assists_per_game":0.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D3","team_id":"1075"},{"player_id":"77","name":"Devin Iverson","team":"Jurassic Puck","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D3","team_id":"1207"},{"player_id":"60983","name":"Blakely Russett","team":"Jackalopes","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D3","team_id":"1760"},{"player_id":"264","name":"Evan Phillips","team":"Rainucks","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":0,"points":3,"pim":2,"goals_per_game":1.5,"assists_per_game":0.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D4","team_id":"2205"},{"player_id":"56021","name":"Tyler Torres","team":"Gnomies","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":0,"points":3,"pim":2,"goals_per_game":1.5,"assists_per_game":0.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D4","team_id":"2200"},{"player_id":"62078","name":"JONAH NASH","team":"Sentinels","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D4","team_id":"1067"},{"player_id":"60980","name":"Finley Rein","team":"SEA Otters","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D4","team_id":"2609"},{"player_id":"56023","name":"Spencer Baldwin","team":"Gnomies","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":2,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-D4","team_id":"2200"},{"player_id":"47685","name":"Kiryl Zakharankau","team":"LADA Doofers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":2,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D5","team_id":"2112"},{"player_id":"56210","name":"Cam Reinig","team":"Puck Buddies Ice","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":2,"points":4,"pim":4,"goals_per_game":1.0,"assists_per_game":1.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D5","team_id":"3098"},{"player_id":"50885","name":"Brian Spencer","team":"Puck Buddies Ice","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":2,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":2.0,"points_per_game":3.0,"source":"snokinghockeyleague","division":"Division-D5","team_id":"3098"},{"player_id":"51070","name":"John Tribble","team":"Puck Buddies Ice","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":2.0,"assists_per_game":0.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D5","team_id":"3098"},{"player_id":"45439","name":"Marat Yafunyaev","team":"LADA Doofers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":2.0,"assists_per_game":0.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-D5","team_id":"2112"},{"player_id":"60956","name":"Edward Wang","team":"Thunderbeers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":2,"points":5,"pim":0,"goals_per_game":1.5,"assists_per_game":1.0,"points_per_game":2.5,"source":"snokinghockeyleague","division":"Division-Novice 1","team_id":"2902"},{"player_id":"29482","name":"Tyler Lebovic","team":"Squid Squad","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":1.5,"assists_per_game":0.5,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-Novice 1","team_id":"2705"},{"player_id":"45442","name":"Sergii Babkin","team":"Thunderbeers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":1,"assists":2,"points":3,"pim":0,"goals_per_game":0.5,"assists_per_game":1.0,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-Novice 1","team_id":"2902"},{"player_id":"60955","name":"Dongkyu Kim","team":"Thunderbeers","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":0,"points":2,"pim":0,"goals_per_game":2.0,"assists_per_game":0.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-Novice 1","team_id":"2902"},{"player_id":"56083","name":"Gabriel Chan","team":"Disco Bandoleros","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":1,"points":2,"pim":0,"goals_per_game":1.0,"assists_per_game":1.0,"points_per_game":2.0,"source":"snokinghockeyleague","division":"Division-Novice 1","team_id":"3096"},{"player_id":"61275","name":"Ryan D'Acquisto","team":"Cluster Pucks","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":3,"assists":1,"points":4,"pim":0,"goals_per_game":3.0,"assists_per_game":1.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-Novice 2","team_id":"3278"},{"player_id":"61966","name":"Peli De Halleux","team":"Cluster Pucks","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":2,"assists":2,"points":4,"pim":4,"goals_per_game":2.0,"assists_per_game":2.0,"points_per_game":4.0,"source":"snokinghockeyleague","division":"Division-Novice 2","team_id":"3278"},{"player_id":"34358","name":"Jared Paulson","team":"Night Owls","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":2,"assists":1,"points":3,"pim":0,"goals_per_game":1.0,"assists_per_game":0.5,"points_per_game":1.5,"source":"snokinghockeyleague","division":"Division-Novice 2","team_id":"2202"},{"player_id":"42692","name":"Fiona Boskovic","team":"Night Owls","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":2,"goals":0,"assists":2,"points":2,"pim":0,"goals_per_game":0.0,"assists_per_game":1.0,"points_per_game":1.0,"source":"snokinghockeyleague","division":"Division-Novice 2","team_id":"2202"},{"player_id":"61272","name":"John Oulton","team":"Ice Pandas","season":"2024 SKAHL Summer Playoffs","league":"SKAHL","games_played":1,"goals":1,"assists":0,"points":1,"pim":0,"goals_per_game":1.0,"assists_per_game":0.0,"points_per_game":1.0,"source":"snokinghockeyleague","division":"Division-Novice 2","team_id":"3151"}]};
+
+const STAT_DEFS = {
+  points:           { label: "P",   long: "Points",            fmt: v => v },
+  goals:            { label: "G",   long: "Goals",             fmt: v => v },
+  assists:          { label: "A",   long: "Assists",           fmt: v => v },
+  points_per_game:  { label: "PPG", long: "Points / Game",     fmt: v => v.toFixed(2) },
+  games_played:     { label: "GP",  long: "Games Played",      fmt: v => v },
+  pim:              { label: "PIM", long: "Penalty Minutes",   fmt: v => v },
+  goals_per_game:   { label: "GPG", long: "Goals / Game",      fmt: v => v.toFixed(2) },
+  assists_per_game: { label: "APG", long: "Assists / Game",    fmt: v => v.toFixed(2) },
+};
+
+// ---------- App state ----------
+const state = {
+  season: "current",
+  search: "",
+  divisions: new Set(),  // empty = all
+  minGp: 0,
+  leaderboardStat: "points",
+  sortKey: "points",
+  sortDir: "desc",
+  charts: {},
+};
+
+// ---------- Helpers ----------
+const $ = sel => document.querySelector(sel);
+const $$ = sel => Array.from(document.querySelectorAll(sel));
+const fmt = (v, key) => STAT_DEFS[key] ? STAT_DEFS[key].fmt(v) : v;
+
+function getActiveData() {
+  return DATA[state.season] || [];
+}
+function getFiltered() {
+  const q = state.search.trim().toLowerCase();
+  return getActiveData().filter(r => {
+    if (state.minGp > 0 && r.games_played < state.minGp) return false;
+    if (state.divisions.size > 0 && !state.divisions.has(r.division)) return false;
+    if (q) {
+      const hay = (r.name + " " + r.team).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+// ---------- Renderers ----------
+function renderKPIs(rows) {
+  const players = rows.length;
+  $('[data-kpi="players"]').textContent = players;
+  $('[data-kpi="players-sub"]').textContent = state.season === "current" ? "Winter 2025-26" : "2024 Summer Playoffs";
+
+  if (rows.length === 0) {
+    ['top-scorer-name','top-scorer-sub','total-goals','total-goals-sub','best-ppg','best-ppg-sub']
+      .forEach(k => $(`[data-kpi="${k}"]`).textContent = "—");
+    return;
+  }
+
+  const top = [...rows].sort((a,b) => b.points - a.points)[0];
+  $('[data-kpi="top-scorer-name"]').textContent = top.name;
+  $('[data-kpi="top-scorer-sub"]').textContent = `${top.points} pts · ${top.team}`;
+
+  const totalGoals = rows.reduce((s, r) => s + r.goals, 0);
+  $('[data-kpi="total-goals"]').textContent = totalGoals.toLocaleString();
+  $('[data-kpi="total-goals-sub"]').textContent = `${rows.length} players · ${rows.reduce((s,r) => s + r.assists, 0)} assists`;
+
+  // Highest PPG (require at least 3 games played to mean something)
+  const eligible = rows.filter(r => r.games_played >= 3);
+  const bestPpg = (eligible.length ? eligible : rows).reduce((b, r) => r.points_per_game > b.points_per_game ? r : b);
+  $('[data-kpi="best-ppg"]').textContent = bestPpg.points_per_game.toFixed(2);
+  $('[data-kpi="best-ppg-sub"]').textContent = `${bestPpg.name} · ${bestPpg.team}`;
+}
+
+function renderLeaderboard(rows) {
+  const k = state.leaderboardStat;
+  const top = [...rows]
+    .filter(r => k === "games_played" || k === "pim" ? true : r.games_played >= (k.includes("per_game") ? 3 : 1))
+    .sort((a,b) => b[k] - a[k])
+    .slice(0, 10);
+  const ol = $("#leaderboard");
+  ol.innerHTML = top.map((r, i) => `
+    <li>
+      <span class="rank">${i+1}</span>
+      <div class="player-info">
+        <span class="name">${escapeHtml(r.name)}</span>
+        <span class="meta">${escapeHtml(r.team)} · ${escapeHtml(r.division || "")}</span>
+      </div>
+      <span class="value">${fmt(r[k], k)}</span>
+    </li>
+  `).join("") || `<li style="text-align:center;color:var(--text-dim);">No players match the current filters.</li>`;
+}
+
+function renderTable(rows) {
+  const sorted = [...rows].sort((a, b) => {
+    const av = a[state.sortKey], bv = b[state.sortKey];
+    if (typeof av === "number") return state.sortDir === "desc" ? bv - av : av - bv;
+    return state.sortDir === "desc" ? String(bv).localeCompare(String(av)) : String(av).localeCompare(String(bv));
+  });
+  const tbody = $("#player-tbody");
+  tbody.innerHTML = sorted.map((r, i) => `
+    <tr>
+      <td class="rank">${i+1}</td>
+      <td class="name">${escapeHtml(r.name)}</td>
+      <td class="team">${escapeHtml(r.team)}</td>
+      <td class="team">${escapeHtml(r.division || "")}</td>
+      <td class="num">${r.games_played}</td>
+      <td class="num">${r.goals}</td>
+      <td class="num">${r.assists}</td>
+      <td class="num"><strong>${r.points}</strong></td>
+      <td class="num">${r.pim}</td>
+      <td class="num">${r.goals_per_game.toFixed(2)}</td>
+      <td class="num">${r.assists_per_game.toFixed(2)}</td>
+      <td class="num"><strong>${r.points_per_game.toFixed(2)}</strong></td>
+    </tr>
+  `).join("");
+  $("#row-count").textContent = `· ${sorted.length} of ${getActiveData().length} players`;
+
+  // Reflect sort indicators
+  $$("#player-table th[data-sort]").forEach(th => {
+    th.classList.remove("sort-asc", "sort-desc");
+    if (th.dataset.sort === state.sortKey) {
+      th.classList.add(state.sortDir === "desc" ? "sort-desc" : "sort-asc");
+    }
+  });
+}
+
+function renderScatter(rows) {
+  const ctx = $("#scatter").getContext("2d");
+  if (state.charts.scatter) state.charts.scatter.destroy();
+  const data = rows
+    .filter(r => r.games_played >= Math.max(1, state.minGp))
+    .map(r => ({
+      x: r.goals_per_game,
+      y: r.assists_per_game,
+      r: 4 + Math.sqrt(r.points) * 1.4,
+      label: r.name,
+      meta: r,
+    }));
+  // Compute medians for quadrant lines
+  const xs = data.map(d => d.x).sort((a,b)=>a-b);
+  const ys = data.map(d => d.y).sort((a,b)=>a-b);
+  const medX = xs.length ? xs[Math.floor(xs.length/2)] : 0;
+  const medY = ys.length ? ys[Math.floor(ys.length/2)] : 0;
+
+  state.charts.scatter = new Chart(ctx, {
+    type: "bubble",
+    data: {
+      datasets: [{
+        data: data,
+        backgroundColor: data.map(d => d.x > medX && d.y > medY ? "rgba(79, 195, 247, 0.6)" : "rgba(79, 195, 247, 0.3)"),
+        borderColor: "rgba(79, 195, 247, 0.9)",
+        borderWidth: 1,
+        hoverBackgroundColor: "rgba(248, 113, 113, 0.85)",
+        hoverBorderColor: "rgba(248, 113, 113, 1)",
+      }],
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: {duration: 300},
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#1a2937", borderColor: "#4fc3f7", borderWidth: 1,
+          padding: 10, titleFont: {size: 13}, bodyFont: {size: 12},
+          callbacks: {
+            title: items => items[0].raw.label,
+            label: ctx => {
+              const r = ctx.raw.meta;
+              return [
+                `${r.team} · ${r.division || ""}`,
+                `${r.points} pts (${r.goals}G ${r.assists}A) in ${r.games_played} GP`,
+                `GPG ${r.goals_per_game.toFixed(2)}  APG ${r.assists_per_game.toFixed(2)}  PPG ${r.points_per_game.toFixed(2)}`,
+              ];
+            }
+          }
+        },
+        annotation: { annotations: {} }, // placeholder; we draw lines via scriptable plugin below
+      },
+      scales: {
+        x: {
+          title: { display: true, text: "Goals per Game", color: "#94a3b8", font: {size: 11, weight: 600}},
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: { color: "#94a3b8" },
+        },
+        y: {
+          title: { display: true, text: "Assists per Game", color: "#94a3b8", font: {size: 11, weight: 600}},
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: { color: "#94a3b8" },
+        },
+      },
+    },
+    plugins: [{
+      id: "medianLines",
+      beforeDatasetsDraw(chart) {
+        const {ctx, scales: {x, y}, chartArea} = chart;
+        if (!chartArea) return;
+        ctx.save();
+        ctx.strokeStyle = "rgba(148, 163, 184, 0.3)";
+        ctx.lineWidth = 1;
+        ctx.setLineDash([3, 4]);
+        // vertical median X
+        const px = x.getPixelForValue(medX);
+        ctx.beginPath(); ctx.moveTo(px, chartArea.top); ctx.lineTo(px, chartArea.bottom); ctx.stroke();
+        // horizontal median Y
+        const py = y.getPixelForValue(medY);
+        ctx.beginPath(); ctx.moveTo(chartArea.left, py); ctx.lineTo(chartArea.right, py); ctx.stroke();
+        ctx.setLineDash([]);
+        // Quadrant labels
+        ctx.fillStyle = "rgba(148, 163, 184, 0.45)";
+        ctx.font = "10px system-ui";
+        ctx.fillText("Two-way scorers", chartArea.right - 100, chartArea.top + 14);
+        ctx.fillText("Pure shooters", chartArea.right - 80, chartArea.bottom - 6);
+        ctx.fillText("Playmakers", chartArea.left + 8, chartArea.top + 14);
+        ctx.fillText("Lower output", chartArea.left + 8, chartArea.bottom - 6);
+        ctx.restore();
+      },
+    }],
+  });
+}
+
+function renderDivisionPpg(rows) {
+  const ctx = $("#div-ppg").getContext("2d");
+  if (state.charts.divPpg) state.charts.divPpg.destroy();
+  const groups = {};
+  rows.forEach(r => {
+    if (!r.division) return;
+    if (r.games_played < 3) return; // exclude noise
+    if (!groups[r.division]) groups[r.division] = [];
+    groups[r.division].push(r.points_per_game);
+  });
+  const labels = Object.keys(groups).sort();
+  const values = labels.map(d => {
+    const arr = groups[d];
+    return arr.reduce((s,v)=>s+v,0) / arr.length;
+  });
+  state.charts.divPpg = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [{
+        label: "Avg PPG",
+        data: values,
+        backgroundColor: "rgba(79, 195, 247, 0.6)",
+        borderColor: "rgba(79, 195, 247, 1)",
+        borderWidth: 1,
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: {duration: 300},
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#1a2937", borderColor: "#4fc3f7", borderWidth: 1,
+          callbacks: {
+            label: ctx => `Avg PPG: ${ctx.parsed.y.toFixed(2)} (n=${groups[ctx.label].length})`,
+          },
+        },
+      },
+      scales: {
+        x: { grid: {display: false}, ticks: {color:"#94a3b8"} },
+        y: {
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: { color: "#94a3b8" },
+          beginAtZero: true,
+          title: { display: true, text: "Avg points per game (GP ≥ 3)", color: "#94a3b8", font: {size:11} },
+        },
+      },
+    },
+  });
+}
+
+function renderTeamTotals(rows) {
+  const ctx = $("#team-totals").getContext("2d");
+  if (state.charts.teamTotals) state.charts.teamTotals.destroy();
+  const teams = {};
+  rows.forEach(r => {
+    if (!r.team) return;
+    teams[r.team] = (teams[r.team] || 0) + r.points;
+  });
+  const sorted = Object.entries(teams).sort((a,b)=>b[1]-a[1]).slice(0, 12);
+  state.charts.teamTotals = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: sorted.map(t=>t[0]),
+      datasets: [{
+        label: "Total Points",
+        data: sorted.map(t=>t[1]),
+        backgroundColor: "rgba(248, 113, 113, 0.55)",
+        borderColor: "rgba(248, 113, 113, 1)",
+        borderWidth: 1,
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true, maintainAspectRatio: false, animation: {duration: 300},
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#1a2937", borderColor: "#f87171", borderWidth: 1,
+          callbacks: { label: ctx => `Total Points: ${ctx.parsed.x}` },
+        },
+      },
+      scales: {
+        x: {
+          grid: { color: "rgba(255,255,255,0.05)" },
+          ticks: { color: "#94a3b8" },
+          beginAtZero: true,
+        },
+        y: { grid: { display: false }, ticks: { color: "#94a3b8", font: {size:11} } },
+      },
+    },
+  });
+}
+
+function renderDivisionFilter() {
+  const all = [...new Set(getActiveData().map(r => r.division).filter(Boolean))].sort();
+  const wrap = $("#division-filter");
+  wrap.innerHTML = all.map(d => `<button class="chip${state.divisions.has(d) ? " active":""}" data-division="${escapeHtml(d)}">${escapeHtml(d)}</button>`).join("");
+  wrap.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const d = btn.dataset.division;
+      if (state.divisions.has(d)) state.divisions.delete(d); else state.divisions.add(d);
+      renderAll();
+    });
+  });
+}
+
+function renderAll() {
+  const filtered = getFiltered();
+  renderKPIs(filtered);
+  renderLeaderboard(filtered);
+  renderTable(filtered);
+  renderScatter(filtered);
+  renderDivisionPpg(filtered);
+  renderTeamTotals(filtered);
+  $("#src-badge").textContent = state.season === "current"
+    ? "snokingahl.com / SportNinja API"
+    : "snokinghockeyleague.com legacy API";
+}
+
+// ---------- Wiring ----------
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function init() {
+  // Season tabs
+  $$("#season-tabs button").forEach(b => b.addEventListener("click", () => {
+    $$("#season-tabs button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.season = b.dataset.season;
+    state.divisions.clear();
+    state.minGp = 0;
+    $("#min-gp").value = 0;
+    $("#min-gp-display").textContent = "0";
+    $("#search").value = "";
+    state.search = "";
+    // Update min-gp slider max based on data
+    const maxGp = Math.max(0, ...getActiveData().map(r => r.games_played));
+    $("#min-gp").max = maxGp;
+    renderDivisionFilter();
+    renderAll();
+  }));
+
+  // Search
+  $("#search").addEventListener("input", e => {
+    state.search = e.target.value;
+    renderAll();
+  });
+
+  // Min GP slider
+  $("#min-gp").addEventListener("input", e => {
+    state.minGp = +e.target.value;
+    $("#min-gp-display").textContent = state.minGp;
+    renderAll();
+  });
+
+  // Reset
+  $("#reset-filters").addEventListener("click", () => {
+    state.divisions.clear();
+    state.minGp = 0;
+    state.search = "";
+    $("#search").value = "";
+    $("#min-gp").value = 0;
+    $("#min-gp-display").textContent = "0";
+    renderDivisionFilter();
+    renderAll();
+  });
+
+  // Stat tabs
+  $$("#stat-tabs button").forEach(b => b.addEventListener("click", () => {
+    $$("#stat-tabs button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.leaderboardStat = b.dataset.stat;
+    renderLeaderboard(getFiltered());
+  }));
+
+  // Sortable table headers
+  $$("#player-table th[data-sort]").forEach(th => th.addEventListener("click", () => {
+    const k = th.dataset.sort;
+    if (state.sortKey === k) {
+      state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
+    } else {
+      state.sortKey = k;
+      state.sortDir = (typeof getActiveData()[0]?.[k] === "number") ? "desc" : "asc";
+    }
+    renderTable(getFiltered());
+  }));
+
+  // Initial slider max
+  const maxGp = Math.max(0, ...getActiveData().map(r => r.games_played));
+  $("#min-gp").max = maxGp;
+
+  renderDivisionFilter();
+  renderAll();
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

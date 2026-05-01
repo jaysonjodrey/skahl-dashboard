@@ -1,0 +1,266 @@
+{
+  "sportninja_stats_record": {
+    "player": {
+      "id": "LJdbhmchVVDf0kzo",
+      "name_first": "Phin",
+      "name_middle": null,
+      "name_last": "Mallon",
+      "full_name": null,
+      "player_number": 6,
+      "play_direction": null,
+      "player_type_id": 4
+    },
+    "schedule": {
+      "id": "bDq9teKQDRFZCNWZ",
+      "name": "C-Wednesday"
+    },
+    "team": {
+      "id": "1HJ5cSiEVNSjXUWC",
+      "name_full": "Ale Storm",
+      "abbreviation": "ALS"
+    },
+    "stats": [
+      {
+        "id": "2",
+        "abbr": "GP",
+        "value": "24"
+      },
+      {
+        "id": "1",
+        "abbr": "G",
+        "value": "28"
+      },
+      {
+        "id": "3",
+        "abbr": "A",
+        "value": "37"
+      },
+      {
+        "id": "4",
+        "abbr": "P",
+        "value": "65"
+      },
+      {
+        "id": "5",
+        "abbr": "PiM",
+        "value": "4"
+      },
+      {
+        "id": "6",
+        "abbr": "PTS/G",
+        "value": "2.71"
+      }
+    ]
+  },
+  "sportninja_stats_meta": {
+    "pagination": {
+      "total": 30,
+      "count": 1465,
+      "per_page": 50,
+      "current_page": "1",
+      "total_pages": 30
+    }
+  },
+  "sportninja_leaderboard_trimmed": {
+    "data": {
+      "player": [
+        {
+          "stat_type_id": 1,
+          "abbreviation": "G",
+          "name": "Goals",
+          "leaders": [
+            {
+              "rank": 1,
+              "value": 38,
+              "player": {
+                "id": "E00CM5dHc2KPd0iw",
+                "name_first": "Henry",
+                "name_last": "Griffin",
+                "full_name": null
+              },
+              "team": {
+                "id": "xiQjsjGIsv7Sfcd2",
+                "name_full": "BladeRunners",
+                "abbreviation": "BLD"
+              }
+            },
+            {
+              "rank": 2,
+              "value": 35,
+              "player": {
+                "id": "AiFSWBYgnPd2jn1D",
+                "name_first": "Brody",
+                "name_last": "Leahy-Wollum",
+                "full_name": null
+              },
+              "team": {
+                "id": "XaxLQ7hj50bn1uap",
+                "name_full": "T.B.D.",
+                "abbreviation": "TBD"
+              }
+            }
+          ]
+        },
+        {
+          "stat_type_id": 2,
+          "abbreviation": "GP",
+          "name": "Games Played",
+          "leaders": [
+            {
+              "rank": 1,
+              "value": 27,
+              "player": {
+                "id": "xv5qwDV9ZbpSBPJg",
+                "name_first": "Kirill",
+                "name_last": "Balaban",
+                "full_name": null
+              },
+              "team": {
+                "id": "yP7QXQ5PhUYABcL5",
+                "name_full": "Weekday Benders",
+                "abbreviation": "WKD"
+              }
+            },
+            {
+              "rank": 2,
+              "value": 27,
+              "player": {
+                "id": "bfa0AFg34f7iERyp",
+                "name_first": "Lance",
+                "name_last": "Hebert",
+                "full_name": null
+              },
+              "team": {
+                "id": "xiQjsjGIsv7Sfcd2",
+                "name_full": "BladeRunners",
+                "abbreviation": "BLD"
+              }
+            }
+          ]
+        },
+        {
+          "stat_type_id": 3,
+          "abbreviation": "A",
+          "name": "Assists",
+          "leaders": [
+            {
+              "rank": 1,
+              "value": 37,
+              "player": {
+                "id": "LJdbhmchVVDf0kzo",
+                "name_first": "Phin",
+                "name_last": "Mallon",
+                "full_name": null
+              },
+              "team": {
+                "id": "1HJ5cSiEVNSjXUWC",
+                "name_full": "Ale Storm",
+                "abbreviation": "ALS"
+              }
+            },
+            {
+              "rank": 2,
+              "value": 37,
+              "player": {
+                "id": "z6azywAxR5ladceD",
+                "name_first": "Hironmoy",
+                "name_last": "Redman",
+                "full_name": null
+              },
+              "team": {
+                "id": "o8LmJe75CVKqd3tu",
+                "name_full": "Sasquatch",
+                "abbreviation": "SSQ"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "historical_statsBySeason_record": {
+    "division": {
+      "divisionId": 375,
+      "seasonId": 1099,
+      "name": "Division-B1",
+      "id": 375
+    },
+    "skaters": [
+      {
+        "first": "Hiron",
+        "last": "Redman",
+        "number": 63,
+        "position": 1,
+        "isSkaterGoaltender": false,
+        "isPlaying": false,
+        "timeOnIce": null,
+        "seasonId": 1099,
+        "playerId": 4093,
+        "teamId": 2742,
+        "teamName": "Sasquatch",
+        "statusStr": "Regular",
+        "positionStr": "Skater",
+        "status": 2,
+        "canDelete": true,
+        "isChanged": false,
+        "showAsGoalie": false,
+        "shooting": 0,
+        "stats": {
+          "GP": 2,
+          "G": 2,
+          "A": 4,
+          "P": 6,
+          "PIM": 2,
+          "PPG": 0,
+          "SHG": 0,
+          "GWG": 0,
+          "GPG": 1.0,
+          "APG": 2.0,
+          "PTPG": 3.0,
+          "GGP": 0,
+          "GGLS": 0,
+          "GASS": 0,
+          "GPTS": 0,
+          "GPIM": 0,
+          "GPPG": 0,
+          "GSHG": 0,
+          "GGWG": 0,
+          "W": 0,
+          "L": 0,
+          "T": 0,
+          "OTL": 0,
+          "GA": 0,
+          "GAA": 0.0,
+          "SV": 0,
+          "SVP": 0.0,
+          "SO": 0,
+          "EGA": 0,
+          "TOI": null,
+          "SA": 0
+        },
+        "id": 63844
+      }
+    ],
+    "note": "Original response had 13 divisions, this one had 5 skaters"
+  },
+  "historical_seasons_record": {
+    "leagueId": 4,
+    "name": "2024 SKAHL Summer Playoffs",
+    "format": 1,
+    "jersey": 0,
+    "period1": 3,
+    "period2": 3,
+    "period3": 2,
+    "overtime": 0,
+    "copyFromId": 0,
+    "copyDivs": false,
+    "copyTeams": false,
+    "copyPlayers": false,
+    "toDisplay": true,
+    "isArchived": false,
+    "isRegistering": false,
+    "id": 1099
+  },
+  "historical_seasons_count": 45,
+  "historical_archived_count": 0
+}

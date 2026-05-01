@@ -1,0 +1,66 @@
+player_id,name,team,season,league,games_played,goals,assists,points,pim,goals_per_game,assists_per_game,points_per_game,source,division,team_id
+4093,Hiron Redman,Sasquatch,2024 SKAHL Summer Playoffs,SKAHL,2,2,4,6,2,1.0,2.0,3.0,snokinghockeyleague,Division-B1,2742
+4059,Mark Whitney,Sasquatch,2024 SKAHL Summer Playoffs,SKAHL,2,4,1,5,0,2.0,0.5,2.5,snokinghockeyleague,Division-B1,2742
+4066,Chris Jones,Sasquatch,2024 SKAHL Summer Playoffs,SKAHL,2,3,2,5,2,1.5,1.0,2.5,snokinghockeyleague,Division-B1,2742
+50941,Jonathan Williams,Sasquatch,2024 SKAHL Summer Playoffs,SKAHL,2,2,3,5,2,1.0,1.5,2.5,snokinghockeyleague,Division-B1,2742
+18568,Eric Tulowitzki,Riders,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,0,1.5,0.5,2.0,snokinghockeyleague,Division-B1,1052
+42388,Nathan Lutz,Seattle Hockey Co.,2024 SKAHL Summer Playoffs,SKAHL,2,2,4,6,2,1.0,2.0,3.0,snokinghockeyleague,Division-B2,1200
+3874,Will Lang,Local Resistance,2024 SKAHL Summer Playoffs,SKAHL,2,3,2,5,0,1.5,1.0,2.5,snokinghockeyleague,Division-B2,1415
+32902,Dmitri Fisenko,Seattle Hockey Co.,2024 SKAHL Summer Playoffs,SKAHL,1,3,1,4,0,3.0,1.0,4.0,snokinghockeyleague,Division-B2,1200
+62350,Cole Dubicki,Seattle Hockey Co.,2024 SKAHL Summer Playoffs,SKAHL,1,1,3,4,0,1.0,3.0,4.0,snokinghockeyleague,Division-B2,1200
+61351,Nick Baker,Iceholes,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,0,1.5,0.5,2.0,snokinghockeyleague,Division-B2,1051
+32902,Dmitri Fisenko,LADA C,2024 SKAHL Summer Playoffs,SKAHL,1,3,2,5,0,3.0,2.0,5.0,snokinghockeyleague,Division-C1,1058
+47209,Rick Sutorius,Stick & Morty,2024 SKAHL Summer Playoffs,SKAHL,2,4,1,5,2,2.0,0.5,2.5,snokinghockeyleague,Division-C1,1548
+274,Christopher Sinner,Misfits,2024 SKAHL Summer Playoffs,SKAHL,2,1,3,4,0,0.5,1.5,2.0,snokinghockeyleague,Division-C1,1049
+61059,Chas Scott,No ReGretzkys,2024 SKAHL Summer Playoffs,SKAHL,1,2,1,3,0,2.0,1.0,3.0,snokinghockeyleague,Division-C1,3243
+31765,Andrew Sutorius,Stick & Morty,2024 SKAHL Summer Playoffs,SKAHL,1,2,1,3,0,2.0,1.0,3.0,snokinghockeyleague,Division-C1,1548
+7672,Daniel Boelens,Strawmen,2024 SKAHL Summer Playoffs,SKAHL,1,2,2,4,0,2.0,2.0,4.0,snokinghockeyleague,Division-C2,1202
+61074,Cory Smetana,Teamy McTeamface,2024 SKAHL Summer Playoffs,SKAHL,2,2,2,4,0,1.0,1.0,2.0,snokinghockeyleague,Division-C2,1203
+51257,Michael Baumker,Murder Hornets,2024 SKAHL Summer Playoffs,SKAHL,2,1,3,4,0,0.5,1.5,2.0,snokinghockeyleague,Division-C2,2760
+21486,Nader Motazed,Silverblades,2024 SKAHL Summer Playoffs,SKAHL,2,1,3,4,0,0.5,1.5,2.0,snokinghockeyleague,Division-C2,1057
+55742,Ross O'Brien,Murder Hornets,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-C2,2760
+22034,Jonathan Litner,Weekday Benders,2024 SKAHL Summer Playoffs,SKAHL,2,4,1,5,0,2.0,0.5,2.5,snokinghockeyleague,Division-C3,2266
+38043,Brent Breslin,Weekday Benders,2024 SKAHL Summer Playoffs,SKAHL,1,1,3,4,2,1.0,3.0,4.0,snokinghockeyleague,Division-C3,2266
+11331,Patrick Kabealo,Weekday Benders,2024 SKAHL Summer Playoffs,SKAHL,1,0,4,4,2,0.0,4.0,4.0,snokinghockeyleague,Division-C3,2266
+443,Ivan Lisitsyn,LADA South,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-C3,1432
+50910,Andrew Radke,Weekday Benders,2024 SKAHL Summer Playoffs,SKAHL,2,1,2,3,0,0.5,1.0,1.5,snokinghockeyleague,Division-C3,2266
+39162,Matt Sutorius,Blue Bandits,2024 SKAHL Summer Playoffs,SKAHL,6,11,9,20,6,1.83,1.5,3.33,snokinghockeyleague,Division-C4,3242
+31765,Andrew Sutorius,Blue Bandits,2024 SKAHL Summer Playoffs,SKAHL,5,9,8,17,0,1.8,1.6,3.4,snokinghockeyleague,Division-C4,3242
+35009,Giovanni Siciliano,Short Shifters,2024 SKAHL Summer Playoffs,SKAHL,6,10,5,15,2,1.67,0.83,2.5,snokinghockeyleague,Division-C4,1549
+29482,Tyler Lebovic,Blue Bandits,2024 SKAHL Summer Playoffs,SKAHL,6,8,5,13,0,1.33,0.83,2.17,snokinghockeyleague,Division-C4,3242
+37321,Karl Dubeau,Short Shifters,2024 SKAHL Summer Playoffs,SKAHL,5,11,1,12,2,2.2,0.2,2.4,snokinghockeyleague,Division-C4,1549
+45437,Gregory Kaplin,LADA Turbo Kings,2024 SKAHL Summer Playoffs,SKAHL,2,1,2,3,0,0.5,1.0,1.5,snokinghockeyleague,Division-D1,2704
+42290,Colby Snorsky,Mt. Si Tavern Warriors,2024 SKAHL Summer Playoffs,SKAHL,2,1,2,3,6,0.5,1.0,1.5,snokinghockeyleague,Division-D1,2706
+28964,Peter Gray,Roadrunners,2024 SKAHL Summer Playoffs,SKAHL,2,0,3,3,0,0.0,1.5,1.5,snokinghockeyleague,Division-D1,2111
+42264,Mikhail Belov,LADA Turbo Kings,2024 SKAHL Summer Playoffs,SKAHL,2,2,0,2,0,1.0,0.0,1.0,snokinghockeyleague,Division-D1,2704
+24092,Al Attallah,Hosers,2024 SKAHL Summer Playoffs,SKAHL,2,2,0,2,0,1.0,0.0,1.0,snokinghockeyleague,Division-D1,1073
+25256,Charles Farina,Cascadiens,2024 SKAHL Summer Playoffs,SKAHL,1,3,0,3,0,3.0,0.0,3.0,snokinghockeyleague,Division-D2,2201
+29482,Tyler Lebovic,Tic-Tac-Toes,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-D2,1399
+21875,Thomas Schmidt,Fighting Sasquatches D,2024 SKAHL Summer Playoffs,SKAHL,2,1,2,3,2,0.5,1.0,1.5,snokinghockeyleague,Division-D2,1403
+12465,John Stearns,Tic-Tac-Toes,2024 SKAHL Summer Playoffs,SKAHL,1,1,1,2,0,1.0,1.0,2.0,snokinghockeyleague,Division-D2,1399
+447,Alexander Volkov,LADA Beerteam,2024 SKAHL Summer Playoffs,SKAHL,2,2,0,2,0,1.0,0.0,1.0,snokinghockeyleague,Division-D2,1654
+28889,Eli Verbowski,Frost Giants,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,0,1.5,0.5,2.0,snokinghockeyleague,Division-D3,1075
+61258,BRENNAN NOWAK,Puck Buddies Reserve,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,2,1.5,0.5,2.0,snokinghockeyleague,Division-D3,1297
+29486,Aaron Wightman,Frost Giants,2024 SKAHL Summer Playoffs,SKAHL,2,3,0,3,0,1.5,0.0,1.5,snokinghockeyleague,Division-D3,1075
+77,Devin Iverson,Jurassic Puck,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-D3,1207
+60983,Blakely Russett,Jackalopes,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-D3,1760
+264,Evan Phillips,Rainucks,2024 SKAHL Summer Playoffs,SKAHL,2,3,0,3,2,1.5,0.0,1.5,snokinghockeyleague,Division-D4,2205
+56021,Tyler Torres,Gnomies,2024 SKAHL Summer Playoffs,SKAHL,2,3,0,3,2,1.5,0.0,1.5,snokinghockeyleague,Division-D4,2200
+62078,JONAH NASH,Sentinels,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-D4,1067
+60980,Finley Rein,SEA Otters,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-D4,2609
+56023,Spencer Baldwin,Gnomies,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,2,1.0,0.5,1.5,snokinghockeyleague,Division-D4,2200
+47685,Kiryl Zakharankau,LADA Doofers,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,2,1.5,0.5,2.0,snokinghockeyleague,Division-D5,2112
+56210,Cam Reinig,Puck Buddies Ice,2024 SKAHL Summer Playoffs,SKAHL,2,2,2,4,4,1.0,1.0,2.0,snokinghockeyleague,Division-D5,3098
+50885,Brian Spencer,Puck Buddies Ice,2024 SKAHL Summer Playoffs,SKAHL,1,1,2,3,0,1.0,2.0,3.0,snokinghockeyleague,Division-D5,3098
+51070,John Tribble,Puck Buddies Ice,2024 SKAHL Summer Playoffs,SKAHL,1,2,0,2,0,2.0,0.0,2.0,snokinghockeyleague,Division-D5,3098
+45439,Marat Yafunyaev,LADA Doofers,2024 SKAHL Summer Playoffs,SKAHL,1,2,0,2,0,2.0,0.0,2.0,snokinghockeyleague,Division-D5,2112
+60956,Edward Wang,Thunderbeers,2024 SKAHL Summer Playoffs,SKAHL,2,3,2,5,0,1.5,1.0,2.5,snokinghockeyleague,Division-Novice 1,2902
+29482,Tyler Lebovic,Squid Squad,2024 SKAHL Summer Playoffs,SKAHL,2,3,1,4,0,1.5,0.5,2.0,snokinghockeyleague,Division-Novice 1,2705
+45442,Sergii Babkin,Thunderbeers,2024 SKAHL Summer Playoffs,SKAHL,2,1,2,3,0,0.5,1.0,1.5,snokinghockeyleague,Division-Novice 1,2902
+60955,Dongkyu Kim,Thunderbeers,2024 SKAHL Summer Playoffs,SKAHL,1,2,0,2,0,2.0,0.0,2.0,snokinghockeyleague,Division-Novice 1,2902
+56083,Gabriel Chan,Disco Bandoleros,2024 SKAHL Summer Playoffs,SKAHL,1,1,1,2,0,1.0,1.0,2.0,snokinghockeyleague,Division-Novice 1,3096
+61275,Ryan D'Acquisto,Cluster Pucks,2024 SKAHL Summer Playoffs,SKAHL,1,3,1,4,0,3.0,1.0,4.0,snokinghockeyleague,Division-Novice 2,3278
+61966,Peli De Halleux,Cluster Pucks,2024 SKAHL Summer Playoffs,SKAHL,1,2,2,4,4,2.0,2.0,4.0,snokinghockeyleague,Division-Novice 2,3278
+34358,Jared Paulson,Night Owls,2024 SKAHL Summer Playoffs,SKAHL,2,2,1,3,0,1.0,0.5,1.5,snokinghockeyleague,Division-Novice 2,2202
+42692,Fiona Boskovic,Night Owls,2024 SKAHL Summer Playoffs,SKAHL,2,0,2,2,0,0.0,1.0,1.0,snokinghockeyleague,Division-Novice 2,2202
+61272,John Oulton,Ice Pandas,2024 SKAHL Summer Playoffs,SKAHL,1,1,0,1,0,1.0,0.0,1.0,snokinghockeyleague,Division-Novice 2,3151
