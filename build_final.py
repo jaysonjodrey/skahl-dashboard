@@ -297,7 +297,7 @@ c.execute("""
     JOIN players p  ON p.id  = ps.player_id
     JOIN seasons s  ON s.id  = ps.season_id
     WHERE ps.gp >= 15 AND p.division_level IS NOT NULL
-      AND p.season_type = 'Regular Season' AND s.name LIKE '%SKAHL%'
+      AND p.season_type = 'Regular Season'
       AND LOWER(p.first_name||' '||p.last_name) != 'empty net'
     GROUP BY ps.player_id, ps.season_id
     ORDER BY ps.goals + ps.assists DESC
@@ -329,12 +329,11 @@ scatter_goalies = [
     for r in c.fetchall()
 ]
 
-# Seasons list for scatter dropdown (SKAHL RS only, sorted by id)
+# Seasons list for scatter dropdown (all RS with division players, sorted by id)
 c.execute("""
     SELECT DISTINCT s.id, s.name FROM seasons s
     JOIN players p ON p.season_id = s.id
     WHERE p.division_level IS NOT NULL AND p.season_type = 'Regular Season'
-      AND s.name LIKE '%SKAHL%'
     ORDER BY s.id
 """)
 scatter_seasons = [{'id': r[0], 'name': r[1]} for r in c.fetchall()]
@@ -382,4 +381,3 @@ print(f'  Goalie SVP leaders:  {len(goalie_svp)}')
 print(f'  Goalie SO leaders:   {len(goalie_shutouts)}')
 print(f'  Goalie GP leaders:   {len(goalie_gp)}')
 print(f'Saved: {OUT}')
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

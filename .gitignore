@@ -21,3 +21,6 @@ active_seasons_data.json
 current_season_data.json
 additional_seasons_data.json
 detailed_season_analysis.json
+
+# Raw network captures (large, not needed in repo)
+*.har
