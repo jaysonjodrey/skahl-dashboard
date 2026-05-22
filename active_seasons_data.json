@@ -1,0 +1,5497 @@
+{
+  "SA6WRBsAXR2e6mtV": {
+    "name": "Summer 2026",
+    "skaters": [
+      {
+        "fn": "Nick",
+        "ln": "Walker",
+        "num": 11,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "2",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Tobias",
+        "ln": "Klima",
+        "num": 77,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Dane",
+        "ln": "Atkinson",
+        "num": 74,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "2",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Ben",
+        "ln": "Teets",
+        "num": 17,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Ehlers",
+        "num": 98,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Eric",
+        "ln": "Salazar",
+        "num": 33,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Yuckin",
+        "num": 5,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Sooyeol",
+        "ln": "Lee",
+        "num": 71,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "3",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Hexemer",
+        "num": 14,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "A": "1",
+          "P": "3",
+          "PTS/G": "3.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Berry",
+        "num": 12,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Brent",
+        "ln": "Miller",
+        "num": 96,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Joe",
+        "ln": "Curulla",
+        "num": 20,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Aaron",
+        "ln": "Wightman",
+        "num": 19,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "James",
+        "ln": "Hood",
+        "num": 13,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PiM": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Karalee",
+        "ln": "Protasiewicz",
+        "num": 3,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Matt",
+        "ln": "Hallowell",
+        "num": 9,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Lars",
+        "ln": "Isaksaetre",
+        "num": 55,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PiM": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Cameron",
+        "ln": "Webber",
+        "num": 10,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Schmidt",
+        "num": 12,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PiM": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Sooyeol",
+        "ln": "Lee",
+        "num": 71,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Kyle",
+        "ln": "Measner",
+        "num": 35,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Oulton",
+        "num": 56,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Kent",
+        "ln": "Wardle",
+        "num": 0,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Jesse",
+        "ln": "Ransavage",
+        "num": 27,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Matthew",
+        "ln": "Trudgeon",
+        "num": 34,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Derek",
+        "ln": "Nhan",
+        "num": 17,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Sara",
+        "ln": "Abdelrahman",
+        "num": 42,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PiM": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Shaopeng",
+        "ln": "Gu",
+        "num": 130,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Christophe",
+        "ln": "Provost",
+        "num": 15,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Williamson",
+        "num": 86,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Yumi",
+        "ln": "Hester",
+        "num": 74,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Christian",
+        "ln": "Aguaristi",
+        "num": 18,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Willmore",
+        "num": 44,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Wallerius",
+        "num": 37,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "2",
+          "P": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Aadarsh",
+        "ln": "Viswanathan",
+        "num": 91,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "2",
+          "P": "2",
+          "PPG": "1",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Patrick",
+        "ln": "Burke",
+        "num": 11,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "A": "1",
+          "P": "2",
+          "PiM": "2",
+          "PTS/G": "2.00"
+        }
+      },
+      {
+        "fn": "Nyle",
+        "ln": "Hendrickson",
+        "num": 51,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Kenneth",
+        "ln": "Gannetta",
+        "num": 30,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Marcus",
+        "ln": "Roberts",
+        "num": 99,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Kiryl",
+        "ln": "Zakharankau",
+        "num": 97,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Harms",
+        "ln": "Kharoud",
+        "num": 0,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "X",
+        "ln": "Ferens",
+        "num": 68,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Majors",
+        "num": 43,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Casey",
+        "ln": "LaCroix",
+        "num": 7,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Bentivenga",
+        "num": 13,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Wightman",
+        "num": 8,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Derek",
+        "ln": "Erdmann",
+        "num": 97,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Pavel",
+        "ln": "Bronnikov",
+        "num": 74,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Drew",
+        "ln": "Neskow",
+        "num": 48,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Marc-Aurele",
+        "ln": "Charpentier-Podrez",
+        "num": 9,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Matthew",
+        "ln": "Aguila",
+        "num": 7,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Ashley",
+        "ln": "Garbelman",
+        "num": 8,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Sam",
+        "ln": "Sausville",
+        "num": 14,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Sean",
+        "ln": "Christensen",
+        "num": 39,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Martin",
+        "ln": "Cai",
+        "num": 43,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Bryce",
+        "ln": "Hilfer",
+        "num": 32,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Joshua",
+        "ln": "Ramirez",
+        "num": 91,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Malcolm",
+        "num": 12,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Alexei",
+        "ln": "Vasilyev",
+        "num": 31,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Sergey",
+        "ln": "Ivanov",
+        "num": 90,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Brad",
+        "ln": "Kessler",
+        "num": 28,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Matthew",
+        "ln": "Bennett",
+        "num": 26,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Nathan",
+        "ln": "Woodward",
+        "num": 30,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Kyle",
+        "ln": "Todd",
+        "num": 78,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Karl",
+        "ln": "Kinerk",
+        "num": 6,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Rob",
+        "ln": "Richmond",
+        "num": 59,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Gabriel",
+        "ln": "Chan",
+        "num": 7,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Adam",
+        "ln": "Kurzbard",
+        "num": 24,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Weerts",
+        "num": 10,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Nick",
+        "ln": "White",
+        "num": 9,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Rob",
+        "ln": "Gibson",
+        "num": 71,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Bryan",
+        "ln": "Lee",
+        "num": 78,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Peter",
+        "ln": "Gray",
+        "num": 86,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Shane",
+        "ln": "Porcincula",
+        "num": 14,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Robert",
+        "ln": "Ferguson",
+        "num": 91,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Dmitry",
+        "ln": "Ozik",
+        "num": 31,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Simon",
+        "ln": "Tam",
+        "num": 88,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Martin",
+        "ln": "Wu",
+        "num": 36,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Timothy",
+        "ln": "Smejkal",
+        "num": 44,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Antonni",
+        "ln": "Laveault",
+        "num": 57,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Heindel",
+        "num": 5,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Pavel",
+        "ln": "Zakharov",
+        "num": 34,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Marat",
+        "ln": "Zhaksilikov",
+        "num": 23,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Gregory",
+        "ln": "Sampson",
+        "num": 7,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Matt",
+        "ln": "Maisano",
+        "num": 76,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Cotton",
+        "num": 13,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Brown",
+        "num": 37,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Seth",
+        "ln": "Lucas",
+        "num": 50,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Walzer",
+        "num": 18,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Daniel",
+        "ln": "Lai",
+        "num": 88,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Hammond",
+        "num": 12,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Jamie",
+        "ln": "Gruenberger",
+        "num": 13,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Yossi",
+        "ln": "Henderson",
+        "num": 69,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Rex",
+        "ln": "Noffsinger Jr.",
+        "num": 97,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Tastad",
+        "num": 52,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Cameron",
+        "ln": "Reinig",
+        "num": 44,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Nate",
+        "ln": "O\u2019Neill",
+        "num": 8,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Brian",
+        "ln": "Raegen",
+        "num": 11,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Logan",
+        "ln": "Sharp",
+        "num": 2,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Yuckin",
+        "num": 5,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Evan",
+        "ln": "Bush",
+        "num": 0,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Mayer",
+        "num": 76,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Mark",
+        "ln": "Roth",
+        "num": 122,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Trueman",
+        "num": 126,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Atar",
+        "ln": "Singh",
+        "num": 98,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Robert",
+        "ln": "Everson",
+        "num": 33,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Rodman",
+        "num": 95,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Ian",
+        "ln": "Childress",
+        "num": 59,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Jarrett",
+        "num": 40,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Dustin",
+        "ln": "Ryland",
+        "num": 11,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Bryan",
+        "ln": "Chapman",
+        "num": 11,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Nate",
+        "ln": "Tobin",
+        "num": 52,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Leong",
+        "num": 16,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Fran\u00e7ois",
+        "ln": "Provost",
+        "num": 18,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Glenn",
+        "ln": "Murawski",
+        "num": 14,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PiM": "4",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Josh",
+        "ln": "Nash",
+        "num": 77,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Nathan",
+        "ln": "Woodward",
+        "num": 30,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Paul",
+        "ln": "Anderko",
+        "num": 92,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Evan",
+        "ln": "Bush",
+        "num": 0,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Tory",
+        "ln": "Pitts",
+        "num": 12,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Tammy",
+        "ln": "Peters",
+        "num": 3,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Ron",
+        "ln": "Boskovic",
+        "num": 22,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Bryan",
+        "ln": "Chapman",
+        "num": 11,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Vic",
+        "ln": "Chacon",
+        "num": 19,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "RJ",
+        "ln": "Haag",
+        "num": 76,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "G": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "D'Acquisto",
+        "num": 9,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Alan",
+        "ln": "Patrick",
+        "num": 24,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Sean",
+        "ln": "Trefethen",
+        "num": 36,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PiM": "2",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Levi",
+        "ln": "Miller",
+        "num": 88,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "A": "1",
+          "P": "1",
+          "PTS/G": "1.00"
+        }
+      },
+      {
+        "fn": "Bryce",
+        "ln": "Gould",
+        "num": 18,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Anthony",
+        "ln": "Benezra",
+        "num": 13,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Leilan",
+        "ln": "Marmolejo Robles",
+        "num": 23,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Suver",
+        "num": 37,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jeff",
+        "ln": "Laub",
+        "num": 9,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mat",
+        "ln": "Staltman",
+        "num": 27,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Daniel",
+        "ln": "McDonald",
+        "num": 10,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Josh",
+        "ln": "Little",
+        "num": 2,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Peter",
+        "ln": "Esbensen",
+        "num": 73,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Max",
+        "ln": "Franco",
+        "num": 78,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Randall",
+        "ln": "Donajkowski",
+        "num": 11,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vanessa",
+        "ln": "Keller",
+        "num": 56,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Lauren",
+        "ln": "Hogge",
+        "num": 72,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Rodolfo",
+        "ln": "Conte",
+        "num": 17,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "RJ",
+        "ln": "Haag",
+        "num": 76,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Carrie",
+        "ln": "Gannetta",
+        "num": 35,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Aadarsh",
+        "ln": "Viswanathan",
+        "num": 91,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Descala",
+        "num": 44,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michelle",
+        "ln": "Bradford",
+        "num": 86,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sara",
+        "ln": "LaCroix",
+        "num": 9,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tom",
+        "ln": "Hardy",
+        "num": 72,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Edward",
+        "ln": "Zaychikov",
+        "num": 6,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "George",
+        "ln": "Albantov",
+        "num": 29,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Fedor",
+        "ln": "Polyanskiy",
+        "num": 52,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Evgeny",
+        "ln": "Fedotov",
+        "num": 71,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Leo",
+        "ln": "Zhuk",
+        "num": 2,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Fed",
+        "ln": "Skitsko",
+        "num": 16,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mariia",
+        "ln": "Lisenko",
+        "num": 96,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Nadya",
+        "ln": "Ilinskaya",
+        "num": 0,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Andrey",
+        "ln": "Gareev",
+        "num": 0,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Max",
+        "ln": "Semenov",
+        "num": 0,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ruslan",
+        "ln": "Polyanskiy",
+        "num": 46,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Brian",
+        "ln": "Besmanoff",
+        "num": 32,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dana",
+        "ln": "Swift",
+        "num": 42,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jackie",
+        "ln": "Salkind",
+        "num": 23,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Rose",
+        "ln": "Fong",
+        "num": 20,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Robert",
+        "ln": "Walker",
+        "num": 86,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Taylor",
+        "ln": "Lasko",
+        "num": 88,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Marcus",
+        "ln": "Jones Jr",
+        "num": 21,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Devin",
+        "ln": "Mettler",
+        "num": 15,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "AJ",
+        "ln": "Duffy",
+        "num": 91,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Milton",
+        "ln": "Rodrigue",
+        "num": 71,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Patrick",
+        "ln": "Murphy",
+        "num": 18,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ben",
+        "ln": "Kelly",
+        "num": 4,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Andy",
+        "ln": "Sain",
+        "num": 36,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Albert",
+        "ln": "Hogan",
+        "num": 11,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sue",
+        "ln": "Adams",
+        "num": 7,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Amy",
+        "ln": "Alexander",
+        "num": 47,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Rick",
+        "ln": "Cary",
+        "num": 90,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Danahy",
+        "num": 45,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Megan",
+        "ln": "Davis",
+        "num": 44,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jackie",
+        "ln": "Jones",
+        "num": 8,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Edwin",
+        "ln": "Liam",
+        "num": 26,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alicia",
+        "ln": "Wu",
+        "num": 40,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dave",
+        "ln": "Anson",
+        "num": 14,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Guy",
+        "ln": "DeFlorio",
+        "num": 16,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Elizabeth",
+        "ln": "Thomas",
+        "num": 0,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Driscoll",
+        "num": 16,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Emma",
+        "ln": "Davis",
+        "num": 21,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Donahue",
+        "num": 71,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Rich",
+        "ln": "Butler",
+        "num": 60,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tyler",
+        "ln": "Larson",
+        "num": 79,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Elliot",
+        "ln": "Jeter",
+        "num": 2,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jesse",
+        "ln": "Champers",
+        "num": 14,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Joe",
+        "ln": "Curulla",
+        "num": 20,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Josh",
+        "ln": "Little",
+        "num": 2,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kirill",
+        "ln": "Kondratenko",
+        "num": 12,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sergey",
+        "ln": "Peshkov",
+        "num": 47,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mikhail",
+        "ln": "Sokolov",
+        "num": 4,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vladimir",
+        "ln": "Olyanich",
+        "num": 89,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sergey",
+        "ln": "Prozhogin",
+        "num": 61,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Roman",
+        "ln": "Unuchek",
+        "num": 49,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Radutskiy",
+        "num": 14,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Valentin",
+        "ln": "Petrov",
+        "num": 18,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Evgenii",
+        "ln": "Podkorytov",
+        "num": 82,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Adel",
+        "ln": "Nizamutdinov",
+        "num": 33,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tyler",
+        "ln": "Lebovic",
+        "num": 10,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kelly",
+        "ln": "Roark",
+        "num": 44,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "John",
+        "ln": "Stearns",
+        "num": 14,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tyler",
+        "ln": "Stearns",
+        "num": 55,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bob",
+        "ln": "Pan",
+        "num": 8,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Walenstein",
+        "num": 17,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tim",
+        "ln": "Hoffman",
+        "num": 2,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Yooshin",
+        "ln": "Lee",
+        "num": 64,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Stearns",
+        "num": 61,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kasi",
+        "ln": "Michel",
+        "num": 0,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Richard",
+        "ln": "Bojanowski",
+        "num": 23,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jackson",
+        "ln": "Chu",
+        "num": 2,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Albert",
+        "ln": "Hogan",
+        "num": 11,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bill",
+        "ln": "Orr",
+        "num": 4,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Patrick",
+        "ln": "Anderson",
+        "num": 22,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Tinnea",
+        "num": 6,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Poleo",
+        "num": 19,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Christopher",
+        "ln": "Bender",
+        "num": 42,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dariel",
+        "ln": "Urtula",
+        "num": 13,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Michel",
+        "num": 16,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Clint",
+        "ln": "Smith",
+        "num": 6,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kelly",
+        "ln": "Skinner",
+        "num": 98,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mike",
+        "ln": "Whisman",
+        "num": 23,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "JT",
+        "ln": "Plummer",
+        "num": 11,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jaymee",
+        "ln": "Marois",
+        "num": 0,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Anny",
+        "ln": "Patrick",
+        "num": 11,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ramon",
+        "ln": "Gonzalez",
+        "num": 19,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jonathan",
+        "ln": "Klein",
+        "num": 23,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Matthew",
+        "ln": "Murphy",
+        "num": 6,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Leath",
+        "num": 17,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Patrick",
+        "ln": "Lytle",
+        "num": 7,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bryn",
+        "ln": "Mason",
+        "num": 28,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sean",
+        "ln": "Skaar",
+        "num": 20,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Al",
+        "ln": "Attallah",
+        "num": 3,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Aston",
+        "ln": "Lau",
+        "num": 24,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jonathan",
+        "ln": "Sandler",
+        "num": 66,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kurt",
+        "ln": "Cai",
+        "num": 27,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "4",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vladimir",
+        "ln": "Mischenko",
+        "num": 2,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Xun",
+        "ln": "Tang",
+        "num": 9,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Moroney",
+        "num": 15,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Spencer",
+        "ln": "Baldwin",
+        "num": 19,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Schmidt",
+        "num": 12,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Gabriel",
+        "ln": "Chan",
+        "num": 7,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Stephen",
+        "ln": "Leung",
+        "num": 45,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Timothy",
+        "ln": "Ng",
+        "num": 96,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Patrick",
+        "ln": "O'Connor",
+        "num": 23,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Natalie",
+        "ln": "Ruiz",
+        "num": 22,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vincent",
+        "ln": "Tong",
+        "num": 19,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Adrian",
+        "ln": "Tse",
+        "num": 18,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kasi",
+        "ln": "Michel",
+        "num": 0,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alexei",
+        "ln": "Belousenko",
+        "num": 11,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Danil",
+        "ln": "Egiazarov",
+        "num": 27,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ilia",
+        "ln": "Gilderman",
+        "num": 41,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "Tverskoy",
+        "num": 44,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Eric",
+        "ln": "Zhaksilikov",
+        "num": 5,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Konstantin",
+        "ln": "Kleiman",
+        "num": 65,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alexander",
+        "ln": "Volkov",
+        "num": 94,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Denis",
+        "ln": "Kleiman",
+        "num": 69,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Papusha",
+        "num": 24,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Iain",
+        "ln": "Wright",
+        "num": 80,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tyler",
+        "ln": "Torres",
+        "num": 9,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vladimir",
+        "ln": "Mischenko",
+        "num": 2,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "JERAMEE",
+        "ln": "SCHERER",
+        "num": 20,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Joshua",
+        "ln": "Ehlke",
+        "num": 29,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ross",
+        "ln": "Varin",
+        "num": 45,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Kees",
+        "num": 74,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Colin",
+        "ln": "Kees",
+        "num": 3,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "3",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Christian",
+        "ln": "Aguaristi",
+        "num": 18,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Nick",
+        "ln": "White",
+        "num": 9,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Michel",
+        "num": 16,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jaymee",
+        "ln": "Marois",
+        "num": 0,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tim",
+        "ln": "Mealy",
+        "num": 39,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Toby",
+        "ln": "Smith",
+        "num": 77,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Matt",
+        "ln": "McDonnal",
+        "num": 41,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Matt",
+        "ln": "Hellman",
+        "num": 9,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Bishop",
+        "num": 25,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jeff",
+        "ln": "Haley",
+        "num": 49,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Wesley",
+        "ln": "Lueders",
+        "num": 82,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Medina",
+        "num": 65,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Helen",
+        "ln": "Rasmussen",
+        "num": 15,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jeremy",
+        "ln": "Blanger",
+        "num": 11,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dave",
+        "ln": "Sherck",
+        "num": 55,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Billy",
+        "ln": "Sanderson",
+        "num": 63,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Anja",
+        "ln": "Bullen",
+        "num": 27,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tjarec",
+        "ln": "Johnson",
+        "num": 5,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Maria",
+        "ln": "Shanygina",
+        "num": 6,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Melissa",
+        "ln": "Bartoletti",
+        "num": 11,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bhupinder",
+        "ln": "Dhillon",
+        "num": 9,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Johan",
+        "ln": "Drenth",
+        "num": 14,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Oleksii",
+        "ln": "Dukhno",
+        "num": 7,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Brian",
+        "ln": "Eyster",
+        "num": 8,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Hal",
+        "ln": "Leonard",
+        "num": 16,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Warren",
+        "ln": "Ottley",
+        "num": 25,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kyler",
+        "ln": "Pulley",
+        "num": 29,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dave",
+        "ln": "Rosenbaum",
+        "num": 3,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bob",
+        "ln": "Mulligan",
+        "num": 56,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vladimir",
+        "ln": "Trunov",
+        "num": 0,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "P": "0",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Hill",
+        "num": 16,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tri",
+        "ln": "Dinh",
+        "num": 2,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Justin",
+        "ln": "Whenry",
+        "num": 21,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Brennan",
+        "ln": "Nowak",
+        "num": 6,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Lynn",
+        "ln": "Robinson",
+        "num": 22,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Aaron",
+        "ln": "Keating",
+        "num": 25,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Clarke",
+        "num": 14,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Roy",
+        "ln": "Park",
+        "num": 18,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Kolter",
+        "num": 89,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Corey",
+        "ln": "Wahler",
+        "num": 123,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Carter",
+        "num": 6,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Dall",
+        "num": 81,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chuck",
+        "ln": "Ferring",
+        "num": 58,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kennie",
+        "ln": "Swanson",
+        "num": 21,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Scott & Tanya",
+        "ln": "Edden",
+        "num": 121,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tanya",
+        "ln": "Edden",
+        "num": 77,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Nam",
+        "ln": "Nguyen",
+        "num": 9,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Daylin",
+        "ln": "Troxel",
+        "num": 25,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Aaron",
+        "ln": "Dethlefs",
+        "num": 29,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Linda",
+        "ln": "Elmes",
+        "num": 96,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Osmond",
+        "ln": "Gunarso",
+        "num": 44,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Evan",
+        "ln": "Anderson",
+        "num": 63,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tyler",
+        "ln": "Root",
+        "num": 78,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Steven",
+        "ln": "Armstrong",
+        "num": 74,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Rob",
+        "ln": "Shults",
+        "num": 44,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Wien",
+        "ln": "Leung",
+        "num": 25,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Colden",
+        "ln": "Cullen",
+        "num": 51,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Nic",
+        "ln": "Freda",
+        "num": 8,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Bradley",
+        "ln": "Rebh",
+        "num": 7,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Manuel",
+        "ln": "Vazquez Rivas",
+        "num": 18,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jesse",
+        "ln": "Via",
+        "num": 94,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jonah",
+        "ln": "Nash",
+        "num": 20,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alain",
+        "ln": "Maillot",
+        "num": 12,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dustin",
+        "ln": "Douglas",
+        "num": 25,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Guillaume",
+        "ln": "Provost",
+        "num": 73,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Harry",
+        "ln": "Pierson",
+        "num": 17,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mark",
+        "ln": "DeFalco",
+        "num": 11,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sam",
+        "ln": "Richardson",
+        "num": 50,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alan",
+        "ln": "Singer",
+        "num": 36,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "6",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Russell",
+        "ln": "Kowalinski",
+        "num": 24,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Michael",
+        "ln": "McElroy",
+        "num": 10,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Tai",
+        "ln": "Shinohara",
+        "num": 9,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Yuckin",
+        "num": 5,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Wayne",
+        "ln": "Hubbard",
+        "num": 19,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kent",
+        "ln": "Wardle",
+        "num": 0,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Stobie",
+        "num": 66,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Mike",
+        "ln": "Streit",
+        "num": 34,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Travis",
+        "ln": "Maas",
+        "num": 14,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Joel",
+        "ln": "Rambaldini",
+        "num": 98,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Antonni",
+        "ln": "Laveault",
+        "num": 57,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alan",
+        "ln": "Florsheim",
+        "num": 43,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Elise",
+        "ln": "Heimowitz",
+        "num": 36,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "4",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Wil",
+        "ln": "Choi",
+        "num": 87,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "14",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Emily",
+        "ln": "Olan",
+        "num": 69,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Hilton",
+        "ln": "Platt",
+        "num": 36,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Adam",
+        "ln": "Baran",
+        "num": 86,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Vanessa",
+        "ln": "Keller",
+        "num": 56,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Jen",
+        "ln": "Rudko",
+        "num": 15,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sean",
+        "ln": "Falk",
+        "num": 98,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Robert",
+        "ln": "Everson",
+        "num": 33,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Linda",
+        "ln": "Elmes",
+        "num": 96,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Ron",
+        "ln": "Warness",
+        "num": 77,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PiM": "2",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Evan",
+        "ln": "Philips",
+        "num": 24,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dave",
+        "ln": "Brennan",
+        "num": 4,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Charles",
+        "ln": "Massey",
+        "num": 32,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Werre",
+        "num": 46,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Erik",
+        "ln": "Rintala",
+        "num": 67,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Alex",
+        "ln": "Yopp",
+        "num": 29,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Corey",
+        "ln": "Poonacha",
+        "num": 13,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Nick",
+        "ln": "Simeone",
+        "num": 91,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Cameron",
+        "ln": "Crabb",
+        "num": 99,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Dustin",
+        "ln": "Duran",
+        "num": 42,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Duran",
+        "num": 11,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "Berry",
+        "num": 12,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      },
+      {
+        "fn": "Sean",
+        "ln": "Winder",
+        "num": 7,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "PTS/G": "0.00"
+        }
+      }
+    ],
+    "goalies": [
+      {
+        "fn": "Aaron",
+        "ln": "Ball",
+        "num": 33,
+        "team": "Sockeye",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "5.56",
+          "SV%": "0.913",
+          "MIN": "54",
+          "SA": "46",
+          "SV": "42",
+          "GA": "4"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Brooks",
+        "num": 19,
+        "team": "Cluster Pucks Too",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "0.00",
+          "SV%": "1.000",
+          "SO": "1",
+          "MIN": "54",
+          "SA": "15",
+          "SV": "15"
+        }
+      },
+      {
+        "fn": "Kevin",
+        "ln": "LeBlanc",
+        "num": 33,
+        "team": "Frost Giants",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.929",
+          "MIN": "54",
+          "SA": "14",
+          "SV": "13",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Tanner",
+        "ln": "Wheeler",
+        "num": 29,
+        "team": "LADA Doofers Wings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "5.56",
+          "MIN": "54",
+          "SA": "36",
+          "SV": "32",
+          "GA": "4"
+        }
+      },
+      {
+        "fn": "Stephen",
+        "ln": "Protasiewicz",
+        "num": 91,
+        "team": "Cascadiens",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.938",
+          "MIN": "54",
+          "SA": "16",
+          "SV": "15",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Nathan",
+        "ln": "Woodward",
+        "num": 30,
+        "team": "Disco Bandoleros",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "6.94",
+          "SV%": "0.896",
+          "MIN": "54",
+          "SA": "48",
+          "SV": "43",
+          "GA": "5"
+        }
+      },
+      {
+        "fn": "Jonathan",
+        "ln": "Blinn",
+        "num": 29,
+        "team": "Seattle Slaken",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "SV%": "0.977",
+          "MIN": "54",
+          "SA": "43",
+          "SV": "42",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Robert",
+        "ln": "Everson",
+        "num": 13,
+        "team": "Summer Team",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "SV%": "0.941",
+          "MIN": "54",
+          "SA": "17",
+          "SV": "16",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Dmitri",
+        "ln": "Fisenko",
+        "num": 58,
+        "team": "LADA Turbo Kings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "SV%": "0.955",
+          "MIN": "54",
+          "SA": "22",
+          "SV": "21",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Pfeifer",
+        "num": 0,
+        "team": "Tic-Tac-Toes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "MIN": "54",
+          "SA": "21",
+          "SV": "20",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Keaton",
+        "ln": "Kinerk",
+        "num": 19,
+        "team": "Gnomies",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.966",
+          "MIN": "54",
+          "SA": "29",
+          "SV": "28",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Jill",
+        "ln": "Loveland",
+        "num": 0,
+        "team": "Ugly Pucklings",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "6.94",
+          "SV%": "0.875",
+          "MIN": "54",
+          "SA": "40",
+          "SV": "35",
+          "GA": "5"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Miller",
+        "num": 31,
+        "team": "Roadrunners",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.923",
+          "MIN": "54",
+          "SA": "13",
+          "SV": "12",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Trenton",
+        "ln": "Lewis",
+        "num": 93,
+        "team": "SEA Otters",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "4.17",
+          "SV%": "0.864",
+          "MIN": "54",
+          "SA": "22",
+          "SV": "19",
+          "GA": "3"
+        }
+      },
+      {
+        "fn": "Stephen",
+        "ln": "Protasiewicz",
+        "num": 91,
+        "team": "Hosers D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "SV%": "0.958",
+          "MIN": "54",
+          "SA": "24",
+          "SV": "23",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Paul",
+        "ln": "Kelley",
+        "num": 30,
+        "team": "Chill Vibes HC",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "T": "1",
+          "GAA": "1.39",
+          "SV%": "0.971",
+          "MIN": "54",
+          "SA": "35",
+          "SV": "34",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Angelo",
+        "ln": "Molina",
+        "num": 67,
+        "team": "LADA Beerteam",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "11.11",
+          "SV%": "0.758",
+          "MIN": "54",
+          "SA": "33",
+          "SV": "25",
+          "GA": "8"
+        }
+      },
+      {
+        "fn": "Angus",
+        "ln": "Mak",
+        "num": 96,
+        "team": "Fighting Sasquatches D",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "MIN": "54",
+          "SA": "22",
+          "SV": "21",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Pfeifer",
+        "num": 0,
+        "team": "Jackalopes",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.963",
+          "MIN": "54",
+          "SA": "27",
+          "SV": "26",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Jason",
+        "ln": "Miller",
+        "num": 31,
+        "team": "Jurassic Puck",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "4.17",
+          "SV%": "0.880",
+          "MIN": "54",
+          "SA": "25",
+          "SV": "22",
+          "GA": "3"
+        }
+      },
+      {
+        "fn": "Carlos",
+        "ln": "Diaz",
+        "num": 34,
+        "team": "Ice Pandas",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.875",
+          "MIN": "54",
+          "PiM": "2",
+          "SA": "8",
+          "SV": "7",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Lee",
+        "ln": "Zhang",
+        "num": 31,
+        "team": "Sky Rats",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "4.17",
+          "SV%": "0.935",
+          "MIN": "54",
+          "SA": "46",
+          "SV": "43",
+          "GA": "3"
+        }
+      },
+      {
+        "fn": "Nathan",
+        "ln": "Woodward",
+        "num": 30,
+        "team": "Puck Buddies Ice",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "4.17",
+          "SV%": "0.897",
+          "MIN": "54",
+          "SA": "29",
+          "SV": "26",
+          "GA": "3"
+        }
+      },
+      {
+        "fn": "Tommy",
+        "ln": "McLaughlin",
+        "num": 64,
+        "team": "Thunderbeers: Stout",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "5.56",
+          "SV%": "0.857",
+          "MIN": "54",
+          "SA": "28",
+          "SV": "24",
+          "GA": "4"
+        }
+      },
+      {
+        "fn": "Gabriel",
+        "ln": "Chan",
+        "num": 0,
+        "team": "Thunderbeers: Lager",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "4.17",
+          "SV%": "0.870",
+          "MIN": "54",
+          "SA": "23",
+          "SV": "20",
+          "GA": "3"
+        }
+      },
+      {
+        "fn": "Alejandro Caraza",
+        "ln": "Duhne",
+        "num": 2,
+        "team": "Stanley Cupcakes",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "6.94",
+          "SV%": "0.844",
+          "MIN": "54",
+          "SA": "32",
+          "SV": "27",
+          "GA": "5"
+        }
+      },
+      {
+        "fn": "Aaron",
+        "ln": "Ball",
+        "num": 33,
+        "team": "Shaved Ice: Tiger's Blood",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "OTL": "1",
+          "GAA": "2.08",
+          "SV%": "0.900",
+          "MIN": "72",
+          "SA": "20",
+          "SV": "18",
+          "GA": "2"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Toth",
+        "num": 1,
+        "team": "Sentinels",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.04",
+          "MIN": "72",
+          "SA": "18",
+          "SV": "17",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "David",
+        "ln": "Pfeifer",
+        "num": 0,
+        "team": "Puck Buddies OG",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.950",
+          "MIN": "54",
+          "SA": "20",
+          "SV": "19",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Miguel",
+        "ln": "Martinez",
+        "num": 3,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "5.56",
+          "SV%": "0.897",
+          "MIN": "54",
+          "SA": "39",
+          "SV": "35",
+          "GA": "4"
+        }
+      },
+      {
+        "fn": "Chris",
+        "ln": "Joye",
+        "num": 0,
+        "team": "Talladega Knights",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "GAA": "0.00",
+          "SV%": "0.000"
+        }
+      },
+      {
+        "fn": "Ryan",
+        "ln": "Reese-Beltrand",
+        "num": 38,
+        "team": "Night Owls",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "1.39",
+          "SV%": "0.938",
+          "MIN": "54",
+          "SA": "16",
+          "SV": "15",
+          "GA": "1"
+        }
+      },
+      {
+        "fn": "Joshua",
+        "ln": "Showalter",
+        "num": 1,
+        "team": "Shaved Ice: Tropic Thunder",
+        "divId": "gnUo0H1NchKQUGfg",
+        "div": "DN",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "8.33",
+          "SV%": "0.739",
+          "MIN": "54",
+          "SA": "23",
+          "SV": "17",
+          "GA": "6"
+        }
+      },
+      {
+        "fn": "Justin",
+        "ln": "Perry",
+        "num": 99,
+        "team": "Rainucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "L": "1",
+          "GAA": "5.56",
+          "SV%": "0.895",
+          "MIN": "54",
+          "SA": "38",
+          "SV": "34",
+          "GA": "4"
+        }
+      },
+      {
+        "fn": "Kenneth",
+        "ln": "Gannetta",
+        "num": 30,
+        "team": "Cluster Pucks",
+        "divId": "tAD2sQupGK434bmX",
+        "div": "D",
+        "stats": {
+          "GP": "1",
+          "W": "1",
+          "GAA": "0.00",
+          "SV%": "1.000",
+          "SO": "1",
+          "MIN": "54",
+          "SA": "30",
+          "SV": "30"
+        }
+      }
+    ]
+  }
+}

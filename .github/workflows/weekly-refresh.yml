@@ -19,12 +19,16 @@ jobs:
       # ── 1. Checkout ────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # ── 2. Python setup ────────────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
         with:
           python-version: '3.11'
 
@@ -32,6 +36,11 @@ jobs:
         run: pip install requests --quiet
 
       # ── 3. Pipeline ────────────────────────────────────────────────────────
+      # NOTE: Only the SportNinja API (snokingahl.com) is scraped here.
+      # snokinghockeyleague.com is historical/archived data — run
+      # skahl_scraper_windows.py manually on your machine if you ever
+      # need to backfill older seasons. It is intentionally not called here.
+
       - name: Step 1 — Fetch active season from SportNinja API
         run: python fetch_active_season.py
 
